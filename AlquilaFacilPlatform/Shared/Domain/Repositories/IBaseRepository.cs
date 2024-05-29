@@ -1,4 +1,4 @@
-namespace ACME.LearningCenterPlatform.API.Shared.Domain.Repositories;
+namespace AlquilaFacilPlatform.Shared.Domain.Repositories;
 
 public interface IBaseRepository<TEntity>
 {

@@ -1,8 +1,8 @@
-using ACME.LearningCenterPlatform.API.Shared.Domain.Repositories;
-using ACME.LearningCenterPlatform.API.Shared.Infrastructure.Persistence.EFC.Configuration;
+using AlquilaFacilPlatform.Shared.Domain.Repositories;
+using AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Configuration;
 using Microsoft.EntityFrameworkCore;
 
-namespace ACME.LearningCenterPlatform.API.Shared.Infrastructure.Persistence.EFC.Repositories;
+namespace AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Repositories;
 
 public abstract class BaseRepository<TEntity>(AppDbContext context) : IBaseRepository<TEntity>
     where TEntity : class
