@@ -1,4 +1,5 @@
 using AlquilaFacilPlatform.Locals.Domain.Model.Aggregates;
+using AlquilaFacilPlatform.Locals.Domain.Model.Entities;
 using AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
 using EntityFrameworkCore.CreatedUpdatedDate.Extensions;
 
@@ -21,11 +22,21 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
         
         // Place here your entities configuration
 
+        builder.Entity<LocalCategory>().HasKey(c => c.Id);
+        builder.Entity<LocalCategory>().Property(c => c.Id).IsRequired().ValueGeneratedOnAdd();
+        builder.Entity<LocalCategory>().Property(c => c.Name).IsRequired().HasMaxLength(30);
+        
+        
+        builder.Entity<LocalCategory>()
+            .HasMany(c => c.Locals)
+            .WithOne(t => t.LocalCategory)
+            .HasForeignKey(t => t.LocalCategoryId)
+            .HasPrincipalKey(t => t.Id);
+        
         
         
         builder.Entity<Local>().HasKey(p => p.Id);
         builder.Entity<Local>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
-        
         builder.Entity<Local>().OwnsOne(p => p.Price,
             n =>
             {
@@ -56,6 +67,12 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
                 h.Property(g => g.PhotoUrlLink).HasColumnName("AddressDistrict");
 
             });
+        /*builder.Entity<Local>().OwnsOne(c => c.LocalCategory,
+            l =>
+            {
+                l.WithOwner().HasForeignKey("Id");
+                l.Property(y => y.Id).HasColumnName("LocalCategory");
+            });*/
 
         
         // Apply SnakeCase Naming Convention

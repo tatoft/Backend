@@ -12,13 +12,13 @@ public class LocalQueryService(ILocalRepository localRepository) : ILocalQuerySe
         return await localRepository.ListAsync();
     }
 
-    public async Task<Local?> Handle(GetLocalByProvinceQuery query)
-    {
-        return await localRepository.FindLocalByProvinceAsync(query.Province);
-    }
-
     public async Task<Local?> Handle(GetLocalByIdQuery query)
     {
         return await localRepository.FindByIdAsync(query.LocalId);
+    }
+
+    public async Task<IEnumerable<Local>> Handle(GetAllLocalsByLocalCategoryIdQuery query)
+    {
+        return await localRepository.FindByLocalCategoryIdAsync(query.LocalCategoryId);
     }
 }

@@ -76,6 +76,9 @@ builder.Services.AddScoped<ILocalCommandService, LocalCommandService>();
 builder.Services.AddScoped<ILocalQueryService, LocalQueryService>();
 builder.Services.AddScoped<ILocalsContextFacade, LocalsContextFacade>();
 builder.Services.AddScoped<ILocalRepository, LocalRepository>();
+builder.Services.AddScoped<ILocalCategoryRepository, LocalCategoryRepository>();
+builder.Services.AddScoped<ILocalCategoryCommandService, LocalCategoryCommandService>();
+builder.Services.AddScoped<ILocalCategoryQueryService, LocalCategoryQueryService>();
 
 var app = builder.Build();
 

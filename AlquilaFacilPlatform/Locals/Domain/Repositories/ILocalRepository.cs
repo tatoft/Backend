@@ -6,5 +6,5 @@ namespace AlquilaFacilPlatform.Locals.Domain.Repositories;
 
 public interface ILocalRepository : IBaseRepository<Local>
 {
-    Task<Local?> FindLocalByProvinceAsync(StreetAddress province);
+    Task<IEnumerable<Local>> FindByLocalCategoryIdAsync(int localCategoryId);
 }

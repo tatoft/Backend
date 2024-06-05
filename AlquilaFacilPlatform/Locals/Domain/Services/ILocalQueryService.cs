@@ -6,6 +6,6 @@ namespace AlquilaFacilPlatform.Locals.Domain.Services;
 public interface ILocalQueryService
 {
     Task<IEnumerable<Local>> Handle(GetAllLocalsQuery query);
-    Task<Local?> Handle(GetLocalByProvinceQuery query);
     Task<Local?> Handle(GetLocalByIdQuery query);
+    Task<IEnumerable<Local>> Handle(GetAllLocalsByLocalCategoryIdQuery query);
 }

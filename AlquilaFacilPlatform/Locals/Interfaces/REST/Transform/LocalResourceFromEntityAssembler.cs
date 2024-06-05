@@ -5,8 +5,14 @@ namespace AlquilaFacilPlatform.Locals.Interfaces.REST.Transform;
 
 public static class LocalResourceFromEntityAssembler
 {
-    public static LocalResource ToResourceFromEntity(Local entity)
+    public static LocalResource ToResourceFromEntity(Local local)
     {
-        return new LocalResource(entity.Id, entity.StreetAddress, entity.LocalType, entity.NightPrice, entity.PhotoUrl);
+        return new LocalResource(
+            local.Id, 
+            local.StreetAddress, 
+            local.LocalType, 
+            local.NightPrice, 
+            local.PhotoUrl,
+            LocalCategoryResourceFromEntityAssembler.ToResourceFromEntity(local.LocalCategory));
     }
 }

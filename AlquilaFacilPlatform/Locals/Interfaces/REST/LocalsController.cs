@@ -42,4 +42,5 @@ public class LocalsController(ILocalCommandService localCommandService, ILocalQu
         var localResource = LocalResourceFromEntityAssembler.ToResourceFromEntity(local);
         return Ok(localResource);
     }
+    
 }
