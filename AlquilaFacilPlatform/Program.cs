@@ -41,14 +41,14 @@ builder.Services.AddSwaggerGen(
         c.SwaggerDoc("v1",
             new OpenApiInfo
             {
-                Title = "ACME.LearningCenterPlatform.API",
+                Title = "AlquilaFacil.API",
                 Version = "v1",
-                Description = "ACME Learning Center Platform API",
-                TermsOfService = new Uri("https://acme-learning.com/tos"),
+                Description = "Alquila Facil API",
+                TermsOfService = new Uri("https://alquila-facil.com/tos"),
                 Contact = new OpenApiContact
                 {
-                    Name = "ACME Studios",
-                    Email = "contact@acme.com"
+                    Name = "Alquila Facil",
+                    Email = "contact@alquilaf.com"
                 },
                 License = new OpenApiLicense
                 {
@@ -66,6 +66,10 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<ISubscriptionRepository, SubscriptionRepository>();
 builder.Services.AddScoped<ISubscriptionCommandService, SubscriptionCommandService>();
 builder.Services.AddScoped<ISubscriptionQueryServices, SubscriptionQueryService>();
+
+builder.Services.AddScoped<IPlanRepository, PlanRepository>();
+builder.Services.AddScoped<IPlanCommandService, PlanCommandService>();
+builder.Services.AddScoped<IPlanQueryService, PlanQueryService>();
 
 var app = builder.Build();
 

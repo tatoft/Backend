@@ -10,15 +10,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50558054-e316-41d5-87fd-0550638efd03" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Publishing/Interfaces/REST/Resources/CreateSubscriptionResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Aggregates/Subscription.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Aggregates/SubscriptionAudit.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Commands/CreateSubscriptionCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Queries/GetAllSubscriptionsQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Queries/GetSubscriptionByIdQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Services/ISubscriptionCommandService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Services/ISubscriptionQueryServices.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Application/Internal/CommandServices/PlanCommandService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Application/Internal/QueryServices/PlanQueryService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Commands/CreatePlanCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Entities/Plan.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Queries/GetAllPlans.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Queries/GetPlanByIdQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Repositories/IPlanRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Services/IPlanCommandService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Services/IPlanQueryService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Infrastructure/Persistence/EFC/Repositories/PlanRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/PlanController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Resources/CreatePlanResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Resources/PlanResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/CreatePlanCommandFromResourceAssembler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/PlanResourceFromEntityAssembler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Application/Internal/CommandServices/SubscriptionCommandService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Application/Internal/CommandServices/SubscriptionCommandService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Aggregates/Subscription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Aggregates/Subscription.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Infrastructure/Persistence/EFC/Repositories/SubscriptionRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Infrastructure/Persistence/EFC/Repositories/SubscriptionRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Resources/CreateSubscriptionResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Resources/CreateSubscriptionResource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Resources/SubscriptionResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Resources/SubscriptionResource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/CreateSubscriptionCommandFromResourceAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/CreateSubscriptionCommandFromResourceAssembler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/SubscriptionResourceFromEntityAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/SubscriptionResourceFromEntityAssembler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +79,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Launch Settings Profile.AlquilaFacilPlatform: http.executor": "Run",
+    ".NET Launch Settings Profile.AlquilaFacilPlatform: https.executor": "Run",
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -83,7 +102,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.AlquilaFacilPlatform: http">
+  <component name="RunManager" selected=".NET Launch Settings Profile.AlquilaFacilPlatform: https">
     <configuration name="AlquilaFacilPlatform: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/AlquilaFacilPlatform/AlquilaFacilPlatform.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
