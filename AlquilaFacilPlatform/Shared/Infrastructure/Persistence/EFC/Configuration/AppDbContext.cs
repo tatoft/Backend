@@ -1,3 +1,4 @@
+using AlquilaFacilPlatform.IAM.Domain.Model.Aggregates;
 using AlquilaFacilPlatform.Locals.Domain.Model.Aggregates;
 using AlquilaFacilPlatform.Locals.Domain.Model.Entities;
 using AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
@@ -67,8 +68,15 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
                 h.Property(g => g.PhotoUrlLink).HasColumnName("PhotoUrlLink");
 
             });
+            
+        builder.Entity<User>().HasKey(u => u.Id);
+        builder.Entity<User>().Property(u => u.Id).IsRequired().ValueGeneratedOnAdd();
+        builder.Entity<User>().Property(u => u.Username).IsRequired();
+        builder.Entity<User>().Property(u => u.PasswordHash).IsRequired();
+        
         
         // Apply SnakeCase Naming Convention
         builder.UseSnakeCaseWithPluralizedTableNamingConvention();
+        
     }
 }

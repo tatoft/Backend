@@ -1,3 +1,14 @@
+using AlquilaFacilPlatform.IAM.Application.Internal.CommandServices;
+using AlquilaFacilPlatform.IAM.Application.Internal.OutboundServices;
+using AlquilaFacilPlatform.IAM.Application.Internal.QueryServices;
+using AlquilaFacilPlatform.IAM.Domain.Respositories;
+using AlquilaFacilPlatform.IAM.Domain.Services;
+using AlquilaFacilPlatform.IAM.Infraestructure.Hashing.BCrypt.Services;
+using AlquilaFacilPlatform.IAM.Infraestructure.Persistence.EFC.Respositories;
+using AlquilaFacilPlatform.IAM.Infraestructure.Tokens.JWT.Configuration;
+using AlquilaFacilPlatform.IAM.Infraestructure.Tokens.JWT.Services;
+using AlquilaFacilPlatform.IAM.Interfaces.ACL;
+using AlquilaFacilPlatform.IAM.Interfaces.ACL.Service;
 using AlquilaFacilPlatform.Locals.Application.Internal.CommandServices;
 using AlquilaFacilPlatform.Locals.Application.Internal.QueryServices;
 using AlquilaFacilPlatform.Locals.Domain.Repositories;
@@ -66,6 +77,30 @@ builder.Services.AddSwaggerGen(
                 }
             });
         c.EnableAnnotations();
+        
+        c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+        {
+            In = ParameterLocation.Header,
+            Description = "Please enter token",
+            Name = "Authorization",
+            Type = SecuritySchemeType.Http,
+            BearerFormat = "JWT",
+            Scheme = "bearer"
+        });
+        c.AddSecurityRequirement(new OpenApiSecurityRequirement
+        {
+            {
+                new OpenApiSecurityScheme
+                {
+                    Reference = new OpenApiReference
+                    {
+                        Id = "Bearer",
+                        Type = ReferenceType.SecurityScheme
+                    }
+                },
+                Array.Empty<string>()
+            }
+        });
     });
 
 // Shared Bounded Context Injection Configuration
@@ -79,6 +114,16 @@ builder.Services.AddScoped<ILocalRepository, LocalRepository>();
 builder.Services.AddScoped<ILocalCategoryRepository, LocalCategoryRepository>();
 builder.Services.AddScoped<ILocalCategoryCommandService, LocalCategoryCommandService>();
 builder.Services.AddScoped<ILocalCategoryQueryService, LocalCategoryQueryService>();
+
+// IAM Bounded Context Injection Configuration
+builder.Services.Configure<TokenSettings>(builder.Configuration.GetSection("TokenSettings"));
+
+builder.Services.AddScoped<IUserRepository, UserRespository>();
+builder.Services.AddScoped<IUserCommandService, UserCommandService>();
+builder.Services.AddScoped<IUserQueryService, UserQueryService>();
+builder.Services.AddScoped<ITokenService, TokerService>();
+builder.Services.AddScoped<IHashingService, HashingService>();
+builder.Services.AddScoped<IIamContextFacade, IamContextFacade>();
 
 var app = builder.Build();
 

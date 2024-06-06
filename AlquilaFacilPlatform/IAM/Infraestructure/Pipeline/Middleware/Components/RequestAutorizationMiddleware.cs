@@ -3,7 +3,7 @@ using AlquilaFacilPlatform.IAM.Domain.Model.Queries;
 using AlquilaFacilPlatform.IAM.Domain.Services;
 using AlquilaFacilPlatform.IAM.Infraestructure.Middleware.Attributes;
 
-namespace AlquilaFacilPlatform.IAM.Infraestructure.Middleware.Components;
+namespace AlquilaFacilPlatform.IAM.Infraestructure.Pipeline.Middleware.Components;
 
 public class RequestAutorizationMiddleware(RequestDelegate next)
 {

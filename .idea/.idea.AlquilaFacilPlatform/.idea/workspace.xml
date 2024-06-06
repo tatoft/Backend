@@ -10,30 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50558054-e316-41d5-87fd-0550638efd03" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Application/Internal/CommandServices/UserCommandService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Application/Internal/OutboundServices/IHashingService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Application/Internal/OutboundServices/ITokenService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Application/Internal/QueryServices/UserQueryService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Hashing/BCrypt/Services/HashingService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Middleware/Attributes/AllowAnonymousAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Middleware/Attributes/AutoriceAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Middleware/Components/RequestAutorizationMiddleware.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Middleware/Extentions/RequestAutorizationMiddlewareExtentions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Persistence/EFC/Respositories/UserRespository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Tokens/JWT/Configuration/TokenSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Tokens/JWT/Services/TokerService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Interfaces/ACL/IIamContextFacade.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Interfaces/ACL/Service/IamContextFacade.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Interfaces/REST/AuthenticationController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Interfaces/REST/Resources/UserResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Interfaces/REST/Transform/AuthenticatedUserResourceFromEntityAssembler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Interfaces/REST/Transform/SignInCommandFromResourceAssembler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Interfaces/REST/Transform/SignUpCommandFromResourceAssembler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Interfaces/REST/Transform/UserResourceFromEntityAssembler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Interfaces/REST/UsersController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/AlquilaFacilPlatform.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/AlquilaFacilPlatform.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Middleware/Attributes/AllowAnonymousAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Pipeline/Middleware/Attributes/AllowAnonymousAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Middleware/Attributes/AutoriceAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Pipeline/Middleware/Attributes/AutoriceAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Middleware/Components/RequestAutorizationMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Pipeline/Middleware/Components/RequestAutorizationMiddleware.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Middleware/Extentions/RequestAutorizationMiddlewareExtentions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Pipeline/Middleware/Extentions/RequestAutorizationMiddlewareExtentions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DpaMonitoringSettings">
-    <option name="autoShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -96,7 +93,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.AlquilaFacilPlatform: IIS Express">
+  <component name="RunManager" selected=".NET Launch Settings Profile.AlquilaFacilPlatform: http">
     <configuration name="AlquilaFacilPlatform: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/AlquilaFacilPlatform/AlquilaFacilPlatform.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />

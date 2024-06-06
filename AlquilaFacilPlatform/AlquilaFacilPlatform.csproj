@@ -23,7 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="IAM\Interfaces\REST\Transform\" />
+      <Folder Include="IAM\Infraestructure\Pipeline\" />
     </ItemGroup>
 
 </Project>
