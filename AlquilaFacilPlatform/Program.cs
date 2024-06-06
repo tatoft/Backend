@@ -3,10 +3,11 @@ using AlquilaFacilPlatform.IAM.Application.Internal.OutboundServices;
 using AlquilaFacilPlatform.IAM.Application.Internal.QueryServices;
 using AlquilaFacilPlatform.IAM.Domain.Respositories;
 using AlquilaFacilPlatform.IAM.Domain.Services;
-using AlquilaFacilPlatform.IAM.Infraestructure.Hashing.BCrypt.Services;
-using AlquilaFacilPlatform.IAM.Infraestructure.Persistence.EFC.Respositories;
-using AlquilaFacilPlatform.IAM.Infraestructure.Tokens.JWT.Configuration;
-using AlquilaFacilPlatform.IAM.Infraestructure.Tokens.JWT.Services;
+using AlquilaFacilPlatform.IAM.Infrastructure.Hashing.BCrypt.Services;
+using AlquilaFacilPlatform.IAM.Infrastructure.Persistence.EFC.Respositories;
+using AlquilaFacilPlatform.IAM.Infrastructure.Pipeline.Middleware.Extensions;
+using AlquilaFacilPlatform.IAM.Infrastructure.Tokens.JWT.Configuration;
+using AlquilaFacilPlatform.IAM.Infrastructure.Tokens.JWT.Services;
 using AlquilaFacilPlatform.IAM.Interfaces.ACL;
 using AlquilaFacilPlatform.IAM.Interfaces.ACL.Service;
 using AlquilaFacilPlatform.Locals.Application.Internal.CommandServices;
@@ -77,7 +78,6 @@ builder.Services.AddSwaggerGen(
                 }
             });
         c.EnableAnnotations();
-        
         c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
         {
             In = ParameterLocation.Header,
@@ -115,13 +115,15 @@ builder.Services.AddScoped<ILocalCategoryRepository, LocalCategoryRepository>();
 builder.Services.AddScoped<ILocalCategoryCommandService, LocalCategoryCommandService>();
 builder.Services.AddScoped<ILocalCategoryQueryService, LocalCategoryQueryService>();
 
+
+
 // IAM Bounded Context Injection Configuration
 builder.Services.Configure<TokenSettings>(builder.Configuration.GetSection("TokenSettings"));
 
 builder.Services.AddScoped<IUserRepository, UserRespository>();
 builder.Services.AddScoped<IUserCommandService, UserCommandService>();
 builder.Services.AddScoped<IUserQueryService, UserQueryService>();
-builder.Services.AddScoped<ITokenService, TokerService>();
+builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IHashingService, HashingService>();
 builder.Services.AddScoped<IIamContextFacade, IamContextFacade>();
 
@@ -140,6 +142,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseRequestAuthorization();
 
 app.UseHttpsRedirection();
 

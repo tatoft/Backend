@@ -2,10 +2,10 @@ using AlquilaFacilPlatform.IAM.Domain.Model.Aggregates;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace AlquilaFacilPlatform.IAM.Infraestructure.Middleware.Attributes;
+namespace AlquilaFacilPlatform.IAM.Infrastructure.Pipeline.Middleware.Attributes;
 
-[AttributeUsage(AttributeTargets.Class|AttributeTargets.Method)]
-public class AutoriceAttribute : Attribute, IAuthorizationFilter
+[AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
+public class AuthorizeAttribute : Attribute, IAuthorizationFilter
 {
     public void OnAuthorization(AuthorizationFilterContext context)
     {
@@ -16,6 +16,7 @@ public class AutoriceAttribute : Attribute, IAuthorizationFilter
             Console.WriteLine(" Skipping authorization");
             return;
         }
+
         // verify if user is logged in by checking if HttpContext.User is set
         var user = (User?)context.HttpContext.Items["User"];
 

@@ -3,7 +3,6 @@ using AlquilaFacilPlatform.Locals.Domain.Model.Aggregates;
 using AlquilaFacilPlatform.Locals.Domain.Model.Entities;
 using AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
 using EntityFrameworkCore.CreatedUpdatedDate.Extensions;
-
 using Microsoft.EntityFrameworkCore;
 
 namespace AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Configuration;
@@ -69,6 +68,8 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
 
             });
             
+        
+        
         builder.Entity<User>().HasKey(u => u.Id);
         builder.Entity<User>().Property(u => u.Id).IsRequired().ValueGeneratedOnAdd();
         builder.Entity<User>().Property(u => u.Username).IsRequired();

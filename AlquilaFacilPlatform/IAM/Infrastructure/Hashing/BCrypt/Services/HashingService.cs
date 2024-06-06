@@ -1,7 +1,7 @@
 using AlquilaFacilPlatform.IAM.Application.Internal.OutboundServices;
 using BCryptNet = BCrypt.Net.BCrypt;
 
-namespace AlquilaFacilPlatform.IAM.Infraestructure.Hashing.BCrypt.Services;
+namespace AlquilaFacilPlatform.IAM.Infrastructure.Hashing.BCrypt.Services;
 
 public class HashingService : IHashingService
 {

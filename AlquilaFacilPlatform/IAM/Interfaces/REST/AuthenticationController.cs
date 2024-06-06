@@ -1,8 +1,8 @@
 using System.Net.Mime;
 using AlquilaFacilPlatform.IAM.Domain.Services;
+using AlquilaFacilPlatform.IAM.Infrastructure.Pipeline.Middleware.Attributes;
 using AlquilaFacilPlatform.IAM.Interfaces.REST.Resources;
 using AlquilaFacilPlatform.IAM.Interfaces.REST.Transform;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AlquilaFacilPlatform.IAM.Interfaces.REST;

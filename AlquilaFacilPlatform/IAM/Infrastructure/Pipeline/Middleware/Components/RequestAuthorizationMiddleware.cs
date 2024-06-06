@@ -1,11 +1,11 @@
 using AlquilaFacilPlatform.IAM.Application.Internal.OutboundServices;
 using AlquilaFacilPlatform.IAM.Domain.Model.Queries;
 using AlquilaFacilPlatform.IAM.Domain.Services;
-using AlquilaFacilPlatform.IAM.Infraestructure.Middleware.Attributes;
+using AlquilaFacilPlatform.IAM.Infrastructure.Pipeline.Middleware.Attributes;
 
-namespace AlquilaFacilPlatform.IAM.Infraestructure.Pipeline.Middleware.Components;
+namespace AlquilaFacilPlatform.IAM.Infrastructure.Pipeline.Middleware.Components;
 
-public class RequestAutorizationMiddleware(RequestDelegate next)
+public class RequestAuthorizationMiddleware(RequestDelegate next)
 {
     public async Task InvokeAsync(
         HttpContext context,
@@ -27,22 +27,22 @@ public class RequestAutorizationMiddleware(RequestDelegate next)
         Console.WriteLine("Entering authorization");
         // get token from request header
         var token = context.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
-        
-        
+
+
         // if token is null then throw exception
         if (token == null) throw new Exception("Null or invalid token");
-        
+
         // validate token
         var userId = await tokenService.ValidateToken(token);
-        
+
         // if token is invalid then throw exception
         if (userId == null) throw new Exception("Invalid token");
-        
+
         // get user by id
         var getUserByIdQuery = new GetUserByIdQuery(userId.Value);
-        
+
         // set user in HttpContext.Items["User"]
-        
+
         var user = await userQueryService.Handle(getUserByIdQuery);
         Console.WriteLine("Successful authorization. Updating Context...");
         context.Items["User"] = user;

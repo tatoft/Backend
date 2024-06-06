@@ -2,17 +2,24 @@ using System.Security.Claims;
 using System.Text;
 using AlquilaFacilPlatform.IAM.Application.Internal.OutboundServices;
 using AlquilaFacilPlatform.IAM.Domain.Model.Aggregates;
-using AlquilaFacilPlatform.IAM.Infraestructure.Tokens.JWT.Configuration;
+using AlquilaFacilPlatform.IAM.Infrastructure.Tokens.JWT.Configuration;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.IdentityModel.Tokens;
 
-namespace AlquilaFacilPlatform.IAM.Infraestructure.Tokens.JWT.Services;
+namespace AlquilaFacilPlatform.IAM.Infrastructure.Tokens.JWT.Services;
 
-public class TokerService(IOptions<TokenSettings>tokenSettings) : ITokenService
+public class TokenService(IOptions<TokenSettings> tokenSettings) : ITokenService
 {
     private readonly TokenSettings _tokenSettings = tokenSettings.Value;
-    
+
+    /**
+     * <summary>
+     *     Generate token
+     * </summary>
+     * <param name="user">The user for token generation</param>
+     * <returns>The generated Token</returns>
+     */
     public string GenerateToken(User user)
     {
         var secret = _tokenSettings.Secret;
@@ -33,7 +40,14 @@ public class TokerService(IOptions<TokenSettings>tokenSettings) : ITokenService
         var token = tokenHandler.CreateToken(tokenDescriptor);
         return token;
     }
-    
+
+    /**
+     * <summary>
+     *     VerifyPassword token
+     * </summary>
+     * <param name="token">The token to validate</param>
+     * <returns>The user id if the token is valid, null otherwise</returns>
+     */
     public async Task<int?> ValidateToken(string token)
     {
         // If token is null or empty
@@ -50,6 +64,7 @@ public class TokerService(IOptions<TokenSettings>tokenSettings) : ITokenService
                 IssuerSigningKey = new SymmetricSecurityKey(key),
                 ValidateIssuer = false,
                 ValidateAudience = false,
+                // Expiration without delay
                 ClockSkew = TimeSpan.Zero
             });
 
