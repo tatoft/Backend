@@ -64,16 +64,9 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
             h =>
             {
                 h.WithOwner().HasForeignKey("Id");
-                h.Property(g => g.PhotoUrlLink).HasColumnName("AddressDistrict");
+                h.Property(g => g.PhotoUrlLink).HasColumnName("PhotoUrlLink");
 
             });
-        /*builder.Entity<Local>().OwnsOne(c => c.LocalCategory,
-            l =>
-            {
-                l.WithOwner().HasForeignKey("Id");
-                l.Property(y => y.Id).HasColumnName("LocalCategory");
-            });*/
-
         
         // Apply SnakeCase Naming Convention
         builder.UseSnakeCaseWithPluralizedTableNamingConvention();

@@ -12,7 +12,7 @@ public class LocalCommandService (ILocalRepository localRepository, ILocalCatego
 {
     public async Task<Local?> Handle(CreateLocalCommand command)
     {
-        var local = new Local(command.LocalType, command.District, command.Province, command.Price, command.PhotoUrl,
+        var local = new Local(command.District, command.Province, command.LocalType, command.Price, command.PhotoUrl,
             command.LocalCategoryId);
         await localRepository.AddAsync(local);
         await unitOfWork.CompleteAsync();
