@@ -17,14 +17,4 @@
         <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Subscriptions\Application\Internal\QueryServices\" />
-      <Folder Include="Subscriptions\Domain\Model\" />
-      <Folder Include="Subscriptions\Domain\Repositories\" />
-      <Folder Include="Subscriptions\Domain\Services\" />
-      <Folder Include="Subscriptions\Infrastructure\Persistence\EFC\Repositories\" />
-      <Folder Include="Subscriptions\Interfaces\REST\Resources\" />
-      <Folder Include="Subscriptions\Interfaces\REST\Transform\" />
-    </ItemGroup>
-
 </Project>

@@ -1,5 +1,5 @@
-namespace AlquilaFacilPlatform.Subscriptions.Application.Internal.CommandServices;
-
+/*namespace AlquilaFacilPlatform.Subscriptions.Application.Internal.CommandServices;
+/*
 public class SubscriptionCommandService(ICategoryRepository categoryRepository, IUnitOfWork unitOfWork)
     : ICategoryCommandService
 {
@@ -11,3 +11,5 @@ public class SubscriptionCommandService(ICategoryRepository categoryRepository, 
         return category;
     }
 }
+
+*/
