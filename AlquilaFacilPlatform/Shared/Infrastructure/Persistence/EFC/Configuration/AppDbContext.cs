@@ -1,3 +1,4 @@
+using AlquilaFacilPlatform.Subscriptions.Domain.Model.Aggregates;
 using EntityFrameworkCore.CreatedUpdatedDate.Extensions;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,6 +19,10 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
         
         // Place here your entities configuration
 
-        
+        builder.Entity<Subscription>().HasKey(s => s.Id);
+        builder.Entity<Subscription>().Property(s => s.Id).IsRequired().ValueGeneratedOnAdd();
+        builder.Entity<Subscription>().Property(s => s.UserId).IsRequired();
+        builder.Entity<Subscription>().Property(s => s.PlanId).IsRequired();
+
     }
 }
