@@ -3,12 +3,9 @@ using EntityFrameworkCore.CreatedUpdatedDate.Contracts;
 
 namespace AlquilaFacilPlatform.Subscriptions.Domain.Model.Aggregates;
 
-public partial class SubscriptionAudit : IEntityWithCreatedUpdatedDate
+public partial class Subscription : IEntityWithCreatedUpdatedDate
 {
-    [Column("CreatedAt")] 
-    public DateTimeOffset? CreatedDate { get; set; }
+    [Column("CreatedAt")] public DateTimeOffset? CreatedDate { get; set; }
 
-    [Column("UpdatedAt")] 
-    public DateTimeOffset? UpdatedDate { get; set; }
-
+    [Column("UpdatedAt")] public DateTimeOffset? UpdatedDate { get; set; }
 }
