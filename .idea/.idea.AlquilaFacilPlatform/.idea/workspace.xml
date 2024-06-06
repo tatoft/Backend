@@ -10,10 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50558054-e316-41d5-87fd-0550638efd03" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Domain/Model/Aggregates/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Domain/Model/Commands/SignInCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Domain/Model/Commands/SignUpCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/dataSources/e2796e41-4adf-41a2-b6c4-0a94523f9196.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/dataSources/e2796e41-4adf-41a2-b6c4-0a94523f9196.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Application/Internal/CommandServices/UserCommandService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Application/Internal/OutboundServices/IHashingService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Application/Internal/OutboundServices/ITokenService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Application/Internal/QueryServices/UserQueryService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Hashing/BCrypt/Services/HashingService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Middleware/Attributes/AllowAnonymousAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Middleware/Attributes/AutoriceAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Middleware/Components/RequestAutorizationMiddleware.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Middleware/Extentions/RequestAutorizationMiddlewareExtentions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Persistence/EFC/Respositories/UserRespository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Tokens/JWT/Configuration/TokenSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infraestructure/Tokens/JWT/Services/TokerService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Interfaces/ACL/IIamContextFacade.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Interfaces/ACL/Service/IamContextFacade.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/AlquilaFacilPlatform.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/AlquilaFacilPlatform.csproj" afterDir="false" />
     </list>
