@@ -9,38 +9,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50558054-e316-41d5-87fd-0550638efd03" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Application/Internal/CommandServices/PlanCommandService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Application/Internal/QueryServices/PlanQueryService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Commands/CreatePlanCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Entities/Plan.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Queries/GetAllPlans.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Queries/GetPlanByIdQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Repositories/IPlanRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Services/IPlanCommandService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Services/IPlanQueryService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Infrastructure/Persistence/EFC/Repositories/PlanRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/PlanController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Resources/CreatePlanResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Resources/PlanResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/CreatePlanCommandFromResourceAssembler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/PlanResourceFromEntityAssembler.cs" afterDir="false" />
+    <list default="true" id="50558054-e316-41d5-87fd-0550638efd03" name="Changes" comment="feat(Invoice): Added Repository Implementation">
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Commands/CreateInvoiceCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Commands/CreateSubscriptionPaymentCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Entities/SubscriptionPayment.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Queries/GetAllInvoicesQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Queries/GetAllSubscriptionPayments.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Queries/GetInvoiceByIdQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Queries/GetSubscriptionPaymentByIdQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/ValueObjects/ESubscriptionStatus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Repositories/IInvoiceRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Repositories/ISubscriptionPaymentRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Services/IInvoiceCommandService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Services/IInvoiceQueryService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Services/ISubscriptionPaymentCommandService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Services/ISubscriptionPaymentQueryService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Infrastructure/Persistence/EFC/Repositories/SubscriptionPaymentRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/InvoiceController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Resources/CreateInvoiceResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Resources/InvoiceResource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/CreateInvoiceCommandFromResourceAssembler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/InvoiceResourceFromEntityAssembler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/AppDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Application/Internal/CommandServices/SubscriptionCommandService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Application/Internal/CommandServices/SubscriptionCommandService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Aggregates/Subscription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Aggregates/Subscription.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Infrastructure/Persistence/EFC/Repositories/SubscriptionRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Infrastructure/Persistence/EFC/Repositories/SubscriptionRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Resources/CreateSubscriptionResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Resources/CreateSubscriptionResource.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Resources/SubscriptionResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Resources/SubscriptionResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/CreateSubscriptionCommandFromResourceAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/CreateSubscriptionCommandFromResourceAssembler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/SubscriptionResourceFromEntityAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/SubscriptionResourceFromEntityAssembler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="autoShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -66,6 +70,7 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -91,7 +96,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "settings.editor.selected.configurable": "vcs.Git",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -102,7 +107,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.AlquilaFacilPlatform: https">
+  <component name="RunManager" selected=".NET Launch Settings Profile.AlquilaFacilPlatform: http">
     <configuration name="AlquilaFacilPlatform: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/AlquilaFacilPlatform/AlquilaFacilPlatform.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -160,14 +165,62 @@
       <workItem from="1716961985524" duration="719000" />
       <workItem from="1717639073092" duration="1811000" />
     </task>
+    <task id="LOCAL-00001" summary="feat(SubscriptionsContextFacade): added interface">
+      <option name="closed" value="true" />
+      <created>1717729729133</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717729729133</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat(Invoice): added Invoice Entity">
+      <option name="closed" value="true" />
+      <created>1717757364850</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717757364850</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat(Invoice): added command service">
+      <option name="closed" value="true" />
+      <created>1717757407443</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717757407443</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat(Invoice): Added Query Service">
+      <option name="closed" value="true" />
+      <created>1717757455862</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717757455862</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat(Invoice): Added Repository Implementation">
+      <option name="closed" value="true" />
+      <created>1717757544253</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717757544253</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="feat(SubscriptionsContextFacade): added interface" />
+    <MESSAGE value="feat(Invoice): added Invoice Entity" />
+    <MESSAGE value="feat(Invoice): added command service" />
+    <MESSAGE value="feat(Invoice): Added Query Service" />
+    <MESSAGE value="feat(Invoice): Added Repository Implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(Invoice): Added Repository Implementation" />
   </component>
 </project>
