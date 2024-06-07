@@ -1,10 +1,8 @@
 using AlquilaFacilPlatform.Shared.Domain.Repositories;
 using AlquilaFacilPlatform.Subscriptions.Domain.Model.Aggregates;
 using AlquilaFacilPlatform.Subscriptions.Domain.Model.Commands;
-using AlquilaFacilPlatform.Subscriptions.Domain.Model.Entities;
 using AlquilaFacilPlatform.Subscriptions.Domain.Repositories;
 using AlquilaFacilPlatform.Subscriptions.Domain.Services;
-using AlquilaFacilPlatform.Subscriptions.Infrastructure.Persistence.EFC.Repositories;
 
 namespace AlquilaFacilPlatform.Subscriptions.Application.Internal.CommandServices;
 
