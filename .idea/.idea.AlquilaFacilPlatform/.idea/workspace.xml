@@ -9,33 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50558054-e316-41d5-87fd-0550638efd03" name="Changes" comment="feat(Invoice): Added Repository Implementation">
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Commands/CreateInvoiceCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Commands/CreateSubscriptionPaymentCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Entities/SubscriptionPayment.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Queries/GetAllInvoicesQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Queries/GetAllSubscriptionPayments.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Queries/GetInvoiceByIdQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Queries/GetSubscriptionPaymentByIdQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/ValueObjects/ESubscriptionStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Repositories/IInvoiceRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Repositories/ISubscriptionPaymentRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Services/IInvoiceCommandService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Services/IInvoiceQueryService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Services/ISubscriptionPaymentCommandService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Services/ISubscriptionPaymentQueryService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Infrastructure/Persistence/EFC/Repositories/SubscriptionPaymentRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/InvoiceController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Resources/CreateInvoiceResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Resources/InvoiceResource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/CreateInvoiceCommandFromResourceAssembler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/InvoiceResourceFromEntityAssembler.cs" afterDir="false" />
+    <list default="true" id="50558054-e316-41d5-87fd-0550638efd03" name="Changes" comment="feat: added Status field to SubscriptionResource">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Application/Internal/CommandServices/SubscriptionCommandService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Application/Internal/CommandServices/SubscriptionCommandService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Aggregates/Subscription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Domain/Model/Aggregates/Subscription.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Resources/SubscriptionResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Resources/SubscriptionResource.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/SubscriptionResourceFromEntityAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/SubscriptionResourceFromEntityAssembler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +42,16 @@
     &quot;accountId&quot;: &quot;9dd6cf03-4728-4811-a4ea-f74d73f5e146&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/USER/source/webstorm/C#/Backend-alquilafacil-vue/AlquilaFacilPlatform/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/USER/source/webstorm/C#/Backend-alquilafacil-vue/AlquilaFacilPlatform/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/USER/source/webstorm/C#/Backend-alquilafacil-vue/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/AppDbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/USER/source/webstorm/C#/Backend-alquilafacil-vue/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/AppDbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/USER/source/webstorm/C#/Backend-alquilafacil-vue/AlquilaFacilPlatform/Subscriptions/Application/Internal/CommandServices/SubscriptionCommandService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/USER/source/webstorm/C#/Backend-alquilafacil-vue/AlquilaFacilPlatform/Subscriptions/Application/Internal/CommandServices/SubscriptionCommandService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/USER/source/webstorm/C#/Backend-alquilafacil-vue/AlquilaFacilPlatform/Subscriptions/Domain/Model/Aggregates/Subscription.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/USER/source/webstorm/C#/Backend-alquilafacil-vue/AlquilaFacilPlatform/Subscriptions/Domain/Model/Aggregates/Subscription.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -205,7 +191,199 @@
       <option name="project" value="LOCAL" />
       <updated>1717757544253</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat(invoice): add IInvoiceRepository interface">
+      <option name="closed" value="true" />
+      <created>1717757610752</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717757610752</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat(invoice): add IInvoiceCommandService interface">
+      <option name="closed" value="true" />
+      <created>1717757630076</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717757630076</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat(invoice): add IInvoiceQueryService interface">
+      <option name="closed" value="true" />
+      <created>1717757659080</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717757659080</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat(invoice): add InvoiceResource record">
+      <option name="closed" value="true" />
+      <created>1717757680493</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1717757680493</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat(transform): add InvoiceResourceFromEntityAssembler class">
+      <option name="closed" value="true" />
+      <created>1717757714010</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717757714010</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: added ISubscriptionPaymentCommandService interface">
+      <option name="closed" value="true" />
+      <created>1717757757955</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717757757955</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: added ISubscriptionPaymentQueryService interface">
+      <option name="closed" value="true" />
+      <created>1717757781927</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717757781927</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat: added ISubscriptionPaymentRepository interface">
+      <option name="closed" value="true" />
+      <created>1717757803557</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1717757803557</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat: added GetAllInvoicesQuery class">
+      <option name="closed" value="true" />
+      <created>1717757831853</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1717757831853</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat: added GetAllSubscriptionPayments class">
+      <option name="closed" value="true" />
+      <created>1717757854881</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1717757854881</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat: added SubscriptionPayment entity class">
+      <option name="closed" value="true" />
+      <created>1717757990280</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1717757990280</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat: added SubscriptionPaymentRepository class">
+      <option name="closed" value="true" />
+      <created>1717758027837</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1717758027837</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feat: added GetSubscriptionPaymentByIdQuery record">
+      <option name="closed" value="true" />
+      <created>1717758067513</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1717758067513</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat: added GetInvoiceByIdQuery record">
+      <option name="closed" value="true" />
+      <created>1717758080116</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1717758080116</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat: added ESubscriptionStatus enum">
+      <option name="closed" value="true" />
+      <created>1717758093491</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1717758093491</updated>
+    </task>
+    <task id="LOCAL-00021" summary="feat: added CreateSubscriptionPaymentCommand record">
+      <option name="closed" value="true" />
+      <created>1717758106804</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1717758106804</updated>
+    </task>
+    <task id="LOCAL-00022" summary="feat: added CreateInvoiceResource record">
+      <option name="closed" value="true" />
+      <created>1717758119768</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1717758119768</updated>
+    </task>
+    <task id="LOCAL-00023" summary="feat: added CreateInvoiceCommandFromResourceAssembler class">
+      <option name="closed" value="true" />
+      <created>1717758153847</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1717758153847</updated>
+    </task>
+    <task id="LOCAL-00024" summary="feat(invoice): added CreateInvoiceCommand record">
+      <option name="closed" value="true" />
+      <created>1717758180721</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1717758180721</updated>
+    </task>
+    <task id="LOCAL-00025" summary="feat(invoice): added InvoiceController class">
+      <option name="closed" value="true" />
+      <created>1717758201070</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1717758201070</updated>
+    </task>
+    <task id="LOCAL-00026" summary="chore: updated AppDbContext configuration with entity mappings">
+      <option name="closed" value="true" />
+      <created>1717758246241</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1717758246241</updated>
+    </task>
+    <task id="LOCAL-00027" summary="feat: added subscription status to Subscription aggregate">
+      <option name="closed" value="true" />
+      <created>1717758319635</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1717758319635</updated>
+    </task>
+    <task id="LOCAL-00028" summary="feat: added assignment of plan to subscription in SubscriptionCommandService">
+      <option name="closed" value="true" />
+      <created>1717758431028</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1717758431028</updated>
+    </task>
+    <task id="LOCAL-00029" summary="feat: added Status field to SubscriptionResource">
+      <option name="closed" value="true" />
+      <created>1717758573652</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1717758573652</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,11 +394,31 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="feat(SubscriptionsContextFacade): added interface" />
-    <MESSAGE value="feat(Invoice): added Invoice Entity" />
-    <MESSAGE value="feat(Invoice): added command service" />
-    <MESSAGE value="feat(Invoice): Added Query Service" />
     <MESSAGE value="feat(Invoice): Added Repository Implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(Invoice): Added Repository Implementation" />
+    <MESSAGE value="feat(invoice): add IInvoiceRepository interface" />
+    <MESSAGE value="feat(invoice): add IInvoiceCommandService interface" />
+    <MESSAGE value="feat(invoice): add IInvoiceQueryService interface" />
+    <MESSAGE value="feat(invoice): add InvoiceResource record" />
+    <MESSAGE value="feat(transform): add InvoiceResourceFromEntityAssembler class" />
+    <MESSAGE value="feat: added ISubscriptionPaymentCommandService interface" />
+    <MESSAGE value="feat: added ISubscriptionPaymentQueryService interface" />
+    <MESSAGE value="feat: added ISubscriptionPaymentRepository interface" />
+    <MESSAGE value="feat: added GetAllInvoicesQuery class" />
+    <MESSAGE value="feat: added GetAllSubscriptionPayments class" />
+    <MESSAGE value="feat: added SubscriptionPayment entity class" />
+    <MESSAGE value="feat: added SubscriptionPaymentRepository class" />
+    <MESSAGE value="feat: added GetSubscriptionPaymentByIdQuery record" />
+    <MESSAGE value="feat: added GetInvoiceByIdQuery record" />
+    <MESSAGE value="feat: added ESubscriptionStatus enum" />
+    <MESSAGE value="feat: added CreateSubscriptionPaymentCommand record" />
+    <MESSAGE value="feat: added CreateInvoiceResource record" />
+    <MESSAGE value="feat: added CreateInvoiceCommandFromResourceAssembler class" />
+    <MESSAGE value="feat(invoice): added CreateInvoiceCommand record" />
+    <MESSAGE value="feat(invoice): added InvoiceController class" />
+    <MESSAGE value="chore: updated AppDbContext configuration with entity mappings" />
+    <MESSAGE value="feat: added subscription status to Subscription aggregate" />
+    <MESSAGE value="feat: added assignment of plan to subscription in SubscriptionCommandService" />
+    <MESSAGE value="feat: added Status field to SubscriptionResource" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added Status field to SubscriptionResource" />
   </component>
 </project>

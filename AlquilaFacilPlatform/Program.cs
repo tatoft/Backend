@@ -71,6 +71,10 @@ builder.Services.AddScoped<IPlanRepository, PlanRepository>();
 builder.Services.AddScoped<IPlanCommandService, PlanCommandService>();
 builder.Services.AddScoped<IPlanQueryService, PlanQueryService>();
 
+builder.Services.AddScoped<IInvoiceQueryService, InvoiceQueryService>();
+builder.Services.AddScoped<IInvoiceRepository, InvoiceRepository>();
+builder.Services.AddScoped<IInvoiceCommandService, InvoiceCommandService>();
+
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
