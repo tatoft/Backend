@@ -1,5 +1,6 @@
 using AlquilaFacilPlatform.Subscriptions.Domain.Model.Aggregates;
 using AlquilaFacilPlatform.Subscriptions.Interfaces.REST.Resources;
+using Microsoft.OpenApi.Extensions;
 
 namespace AlquilaFacilPlatform.Subscriptions.Interfaces.REST.Transform;
 
@@ -9,6 +10,7 @@ public static class SubscriptionResourceFromEntityAssembler
     {
         return new SubscriptionResource(entity.Id, 
             entity.UserId, 
-            PlanResourceFromEntityAssembler.ToResourceFromEntity(entity.Plan));
+            PlanResourceFromEntityAssembler.ToResourceFromEntity(entity.Plan),
+            entity.Status.GetDisplayName());
     }
 }
