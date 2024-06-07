@@ -17,6 +17,13 @@ using AlquilaFacilPlatform.Locals.Domain.Services;
 using AlquilaFacilPlatform.Locals.Infraestructure.Persistence.EFC.Repositories;
 using AlquilaFacilPlatform.Locals.Interfaces.ACL;
 using AlquilaFacilPlatform.Locals.Interfaces.ACL.Services;
+using AlquilaFacilPlatform.Profiles.Application.Internal.CommandServices;
+using AlquilaFacilPlatform.Profiles.Application.Internal.QueryServices;
+using AlquilaFacilPlatform.Profiles.Domain.Repositories;
+using AlquilaFacilPlatform.Profiles.Domain.Services;
+using AlquilaFacilPlatform.Profiles.Infrastructure.Persistence.EFC.Repositories;
+using AlquilaFacilPlatform.Profiles.Interfaces.ACL;
+using AlquilaFacilPlatform.Profiles.Interfaces.ACL.Services;
 using AlquilaFacilPlatform.Shared.Domain.Repositories;
 using AlquilaFacilPlatform.Shared.Infrastructure.Interfaces.ASP.Configuration;
 using AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Configuration;
@@ -115,7 +122,11 @@ builder.Services.AddScoped<ILocalCategoryRepository, LocalCategoryRepository>();
 builder.Services.AddScoped<ILocalCategoryCommandService, LocalCategoryCommandService>();
 builder.Services.AddScoped<ILocalCategoryQueryService, LocalCategoryQueryService>();
 
-
+// Profiles Bounded Context Injection Configuration
+builder.Services.AddScoped<IProfileRepository, ProfileRepository>();
+builder.Services.AddScoped<IProfileCommandService, ProfileCommandService>();
+builder.Services.AddScoped<IProfileQueryService, ProfileQueryService>();
+builder.Services.AddScoped<IProfilesContextFacade, ProfilesContextFacade>();
 
 // IAM Bounded Context Injection Configuration
 builder.Services.Configure<TokenSettings>(builder.Configuration.GetSection("TokenSettings"));
