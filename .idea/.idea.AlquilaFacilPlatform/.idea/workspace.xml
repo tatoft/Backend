@@ -9,10 +9,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50558054-e316-41d5-87fd-0550638efd03" name="Changes" comment="feat: added Status field to SubscriptionResource">
+    <list default="true" id="50558054-e316-41d5-87fd-0550638efd03" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/SubscriptionResourceFromEntityAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/SubscriptionResourceFromEntityAssembler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Application/Internal/CommandServices/UserCommandService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Application/Internal/CommandServices/UserCommandService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Application/Internal/QueryServices/UserQueryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Application/Internal/QueryServices/UserQueryService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Domain/Model/Aggregates/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Domain/Model/Aggregates/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Domain/Services/IUserCommandService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Domain/Services/IUserCommandService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Interfaces/REST/Transform/UserResourceFromEntityAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Interfaces/REST/Transform/UserResourceFromEntityAssembler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Interfaces/REST/UsersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Interfaces/REST/UsersController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Application/Internal/CommandServices/ProfileCommandService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Application/Internal/CommandServices/ProfileCommandService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Domain/Model/Aggregates/Profile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Domain/Model/Aggregates/Profile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Domain/Model/Commands/CreateProfileCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Domain/Model/Commands/CreateProfileCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Domain/Model/Queries/GetAllProfilesQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Domain/Model/Queries/GetAllProfilesQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Infrastructure/Persistence/EFC/Repositories/ProfileRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Infrastructure/Persistence/EFC/Repositories/ProfileRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/ACL/IProfilesContextFacade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/ACL/IProfilesContextFacade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/ACL/Services/ProfilesContextFacade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/ACL/Services/ProfilesContextFacade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/ProfilesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/ProfilesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Resources/CreateProfileResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Resources/CreateProfileResource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Resources/ProfileResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Resources/ProfileResource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Transform/CreateProfileCommandFromResourceAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Transform/CreateProfileCommandFromResourceAssembler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Transform/ProfileResourceFromEntityAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Transform/ProfileResourceFromEntityAssembler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/AppDbContext.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,32 +50,21 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;BGamio&quot;
-  }
-}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Aplicaciones-Web-SW56-AlquilaFacil/Backend.git&quot;,
-    &quot;accountId&quot;: &quot;9dd6cf03-4728-4811-a4ea-f74d73f5e146&quot;
+    &quot;url&quot;: &quot;https://github.com/tatoft/Backend.git&quot;,
+    &quot;accountId&quot;: &quot;a0e09f17-ff5f-47cb-a5ee-d326679de74a&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/USER/source/webstorm/C#/Backend-alquilafacil-vue/AlquilaFacilPlatform/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/USER/source/webstorm/C#/Backend-alquilafacil-vue/AlquilaFacilPlatform/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/USER/source/webstorm/C#/Backend-alquilafacil-vue/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/AppDbContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/USER/source/webstorm/C#/Backend-alquilafacil-vue/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/AppDbContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/USER/source/webstorm/C#/Backend-alquilafacil-vue/AlquilaFacilPlatform/Subscriptions/Application/Internal/CommandServices/SubscriptionCommandService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/USER/source/webstorm/C#/Backend-alquilafacil-vue/AlquilaFacilPlatform/Subscriptions/Application/Internal/CommandServices/SubscriptionCommandService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/USER/source/webstorm/C#/Backend-alquilafacil-vue/AlquilaFacilPlatform/Subscriptions/Domain/Model/Aggregates/Subscription.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/USER/source/webstorm/C#/Backend-alquilafacil-vue/AlquilaFacilPlatform/Subscriptions/Domain/Model/Aggregates/Subscription.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/c9e3996173cec136bc2e9f3b4ec45f2a323b1d63/src/Mvc/Mvc.Core/src/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AlquilaFacilPlatform/Locals/Domain/Repositories/ILocalRepository.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -70,13 +79,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Launch Settings Profile.AlquilaFacilPlatform: IIS Express.executor": "Run",
     ".NET Launch Settings Profile.AlquilaFacilPlatform: http.executor": "Run",
-    ".NET Launch Settings Profile.AlquilaFacilPlatform: https.executor": "Run",
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "feature/subscription",
+    "git-widget-placeholder": "feature/profiles",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,10 +95,14 @@
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver.localdb",
+      "mysql"
+    ],
     "rider.external.source.directories": [
-      "C:\\Users\\gamio\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\gamio\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\gamio\\AppData\\Local\\Symbols\\src"
+      "C:\\Users\\Augusto\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Augusto\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\Augusto\\AppData\\Local\\Symbols\\src"
     ]
   }
 }]]></component>
@@ -149,239 +162,11 @@
       <option name="presentableId" value="Default" />
       <updated>1716961983682</updated>
       <workItem from="1716961985524" duration="719000" />
-      <workItem from="1717639073092" duration="1811000" />
-    </task>
-    <task id="LOCAL-00001" summary="feat(SubscriptionsContextFacade): added interface">
-      <option name="closed" value="true" />
-      <created>1717729729133</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1717729729133</updated>
-    </task>
-    <task id="LOCAL-00002" summary="feat(Invoice): added Invoice Entity">
-      <option name="closed" value="true" />
-      <created>1717757364850</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1717757364850</updated>
-    </task>
-    <task id="LOCAL-00003" summary="feat(Invoice): added command service">
-      <option name="closed" value="true" />
-      <created>1717757407443</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1717757407443</updated>
-    </task>
-    <task id="LOCAL-00004" summary="feat(Invoice): Added Query Service">
-      <option name="closed" value="true" />
-      <created>1717757455862</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1717757455862</updated>
-    </task>
-    <task id="LOCAL-00005" summary="feat(Invoice): Added Repository Implementation">
-      <option name="closed" value="true" />
-      <created>1717757544253</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1717757544253</updated>
-    </task>
-    <task id="LOCAL-00006" summary="feat(invoice): add IInvoiceRepository interface">
-      <option name="closed" value="true" />
-      <created>1717757610752</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1717757610752</updated>
-    </task>
-    <task id="LOCAL-00007" summary="feat(invoice): add IInvoiceCommandService interface">
-      <option name="closed" value="true" />
-      <created>1717757630076</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1717757630076</updated>
-    </task>
-    <task id="LOCAL-00008" summary="feat(invoice): add IInvoiceQueryService interface">
-      <option name="closed" value="true" />
-      <created>1717757659080</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1717757659080</updated>
-    </task>
-    <task id="LOCAL-00009" summary="feat(invoice): add InvoiceResource record">
-      <option name="closed" value="true" />
-      <created>1717757680493</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1717757680493</updated>
-    </task>
-    <task id="LOCAL-00010" summary="feat(transform): add InvoiceResourceFromEntityAssembler class">
-      <option name="closed" value="true" />
-      <created>1717757714010</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1717757714010</updated>
-    </task>
-    <task id="LOCAL-00011" summary="feat: added ISubscriptionPaymentCommandService interface">
-      <option name="closed" value="true" />
-      <created>1717757757955</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1717757757955</updated>
-    </task>
-    <task id="LOCAL-00012" summary="feat: added ISubscriptionPaymentQueryService interface">
-      <option name="closed" value="true" />
-      <created>1717757781927</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1717757781927</updated>
-    </task>
-    <task id="LOCAL-00013" summary="feat: added ISubscriptionPaymentRepository interface">
-      <option name="closed" value="true" />
-      <created>1717757803557</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1717757803557</updated>
-    </task>
-    <task id="LOCAL-00014" summary="feat: added GetAllInvoicesQuery class">
-      <option name="closed" value="true" />
-      <created>1717757831853</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1717757831853</updated>
-    </task>
-    <task id="LOCAL-00015" summary="feat: added GetAllSubscriptionPayments class">
-      <option name="closed" value="true" />
-      <created>1717757854881</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1717757854881</updated>
-    </task>
-    <task id="LOCAL-00016" summary="feat: added SubscriptionPayment entity class">
-      <option name="closed" value="true" />
-      <created>1717757990280</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1717757990280</updated>
-    </task>
-    <task id="LOCAL-00017" summary="feat: added SubscriptionPaymentRepository class">
-      <option name="closed" value="true" />
-      <created>1717758027837</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1717758027837</updated>
-    </task>
-    <task id="LOCAL-00018" summary="feat: added GetSubscriptionPaymentByIdQuery record">
-      <option name="closed" value="true" />
-      <created>1717758067513</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1717758067513</updated>
-    </task>
-    <task id="LOCAL-00019" summary="feat: added GetInvoiceByIdQuery record">
-      <option name="closed" value="true" />
-      <created>1717758080116</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1717758080116</updated>
-    </task>
-    <task id="LOCAL-00020" summary="feat: added ESubscriptionStatus enum">
-      <option name="closed" value="true" />
-      <created>1717758093491</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1717758093491</updated>
-    </task>
-    <task id="LOCAL-00021" summary="feat: added CreateSubscriptionPaymentCommand record">
-      <option name="closed" value="true" />
-      <created>1717758106804</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1717758106804</updated>
-    </task>
-    <task id="LOCAL-00022" summary="feat: added CreateInvoiceResource record">
-      <option name="closed" value="true" />
-      <created>1717758119768</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1717758119768</updated>
-    </task>
-    <task id="LOCAL-00023" summary="feat: added CreateInvoiceCommandFromResourceAssembler class">
-      <option name="closed" value="true" />
-      <created>1717758153847</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1717758153847</updated>
-    </task>
-    <task id="LOCAL-00024" summary="feat(invoice): added CreateInvoiceCommand record">
-      <option name="closed" value="true" />
-      <created>1717758180721</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1717758180721</updated>
-    </task>
-    <task id="LOCAL-00025" summary="feat(invoice): added InvoiceController class">
-      <option name="closed" value="true" />
-      <created>1717758201070</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1717758201070</updated>
-    </task>
-    <task id="LOCAL-00026" summary="chore: updated AppDbContext configuration with entity mappings">
-      <option name="closed" value="true" />
-      <created>1717758246241</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1717758246241</updated>
-    </task>
-    <task id="LOCAL-00027" summary="feat: added subscription status to Subscription aggregate">
-      <option name="closed" value="true" />
-      <created>1717758319635</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1717758319635</updated>
-    </task>
-    <task id="LOCAL-00028" summary="feat: added assignment of plan to subscription in SubscriptionCommandService">
-      <option name="closed" value="true" />
-      <created>1717758431028</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1717758431028</updated>
-    </task>
-    <task id="LOCAL-00029" summary="feat: added Status field to SubscriptionResource">
-      <option name="closed" value="true" />
-      <created>1717758573652</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1717758573652</updated>
+      <workItem from="1716963217142" duration="698000" />
+      <workItem from="1717019326214" duration="15582000" />
+      <workItem from="1717208602407" duration="910000" />
+      <workItem from="1717553018992" duration="1474000" />
+      <workItem from="1717554595200" duration="12751000" />
     </task>
     <option name="localTasksCounter" value="30" />
     <servers />
@@ -389,7 +174,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

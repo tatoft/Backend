@@ -4,10 +4,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Repositories;
 
-public abstract class BaseRepository<TEntity>(AppDbContext context) : IBaseRepository<TEntity>
+public abstract class BaseRepository<TEntity> : IBaseRepository<TEntity>
     where TEntity : class
 {
-    protected readonly AppDbContext Context = context;
+
+    protected readonly AppDbContext Context;
+    
+    protected BaseRepository (AppDbContext context) => Context = context;
 
     public async Task AddAsync(TEntity entity) => await Context.Set<TEntity>().AddAsync(entity);
 

@@ -1,3 +1,29 @@
+using AlquilaFacilPlatform.IAM.Application.Internal.CommandServices;
+using AlquilaFacilPlatform.IAM.Application.Internal.OutboundServices;
+using AlquilaFacilPlatform.IAM.Application.Internal.QueryServices;
+using AlquilaFacilPlatform.IAM.Domain.Respositories;
+using AlquilaFacilPlatform.IAM.Domain.Services;
+using AlquilaFacilPlatform.IAM.Infrastructure.Hashing.BCrypt.Services;
+using AlquilaFacilPlatform.IAM.Infrastructure.Persistence.EFC.Respositories;
+using AlquilaFacilPlatform.IAM.Infrastructure.Pipeline.Middleware.Extensions;
+using AlquilaFacilPlatform.IAM.Infrastructure.Tokens.JWT.Configuration;
+using AlquilaFacilPlatform.IAM.Infrastructure.Tokens.JWT.Services;
+using AlquilaFacilPlatform.IAM.Interfaces.ACL;
+using AlquilaFacilPlatform.IAM.Interfaces.ACL.Service;
+using AlquilaFacilPlatform.Locals.Application.Internal.CommandServices;
+using AlquilaFacilPlatform.Locals.Application.Internal.QueryServices;
+using AlquilaFacilPlatform.Locals.Domain.Repositories;
+using AlquilaFacilPlatform.Locals.Domain.Services;
+using AlquilaFacilPlatform.Locals.Infraestructure.Persistence.EFC.Repositories;
+using AlquilaFacilPlatform.Locals.Interfaces.ACL;
+using AlquilaFacilPlatform.Locals.Interfaces.ACL.Services;
+using AlquilaFacilPlatform.Profiles.Application.Internal.CommandServices;
+using AlquilaFacilPlatform.Profiles.Application.Internal.QueryServices;
+using AlquilaFacilPlatform.Profiles.Domain.Repositories;
+using AlquilaFacilPlatform.Profiles.Domain.Services;
+using AlquilaFacilPlatform.Profiles.Infrastructure.Persistence.EFC.Repositories;
+using AlquilaFacilPlatform.Profiles.Interfaces.ACL;
+using AlquilaFacilPlatform.Profiles.Interfaces.ACL.Services;
 using AlquilaFacilPlatform.Shared.Domain.Repositories;
 using AlquilaFacilPlatform.Shared.Infrastructure.Interfaces.ASP.Configuration;
 using AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Configuration;
@@ -16,7 +42,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers( options => options.Conventions.Add(new KebabCaseRouteNamingConvention()));
 
+// Add Database Connection
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+// Configure Database Context and Logging Levels
 
 builder.Services.AddDbContext<AppDbContext>(
     options =>
@@ -32,6 +61,8 @@ builder.Services.AddDbContext<AppDbContext>(
                     .LogTo(Console.WriteLine, LogLevel.Error)
                     .EnableDetailedErrors();    
     });
+// Configure Lowercase URLs
+builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -75,6 +106,59 @@ builder.Services.AddScoped<IInvoiceQueryService, InvoiceQueryService>();
 builder.Services.AddScoped<IInvoiceRepository, InvoiceRepository>();
 builder.Services.AddScoped<IInvoiceCommandService, InvoiceCommandService>();
 
+        c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+        {
+            In = ParameterLocation.Header,
+            Description = "Please enter token",
+            Name = "Authorization",
+            Type = SecuritySchemeType.Http,
+            BearerFormat = "JWT",
+            Scheme = "bearer"
+        });
+        c.AddSecurityRequirement(new OpenApiSecurityRequirement
+        {
+            {
+                new OpenApiSecurityScheme
+                {
+                    Reference = new OpenApiReference
+                    {
+                        Id = "Bearer",
+                        Type = ReferenceType.SecurityScheme
+                    }
+                },
+                Array.Empty<string>()
+            }
+        });
+    });
+
+// Shared Bounded Context Injection Configuration
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+// Profiles Bounded Context Injection Configuration
+builder.Services.AddScoped<ILocalCommandService, LocalCommandService>();
+builder.Services.AddScoped<ILocalQueryService, LocalQueryService>();
+builder.Services.AddScoped<ILocalsContextFacade, LocalsContextFacade>();
+builder.Services.AddScoped<ILocalRepository, LocalRepository>();
+builder.Services.AddScoped<ILocalCategoryRepository, LocalCategoryRepository>();
+builder.Services.AddScoped<ILocalCategoryCommandService, LocalCategoryCommandService>();
+builder.Services.AddScoped<ILocalCategoryQueryService, LocalCategoryQueryService>();
+
+// Profiles Bounded Context Injection Configuration
+builder.Services.AddScoped<IProfileRepository, ProfileRepository>();
+builder.Services.AddScoped<IProfileCommandService, ProfileCommandService>();
+builder.Services.AddScoped<IProfileQueryService, ProfileQueryService>();
+builder.Services.AddScoped<IProfilesContextFacade, ProfilesContextFacade>();
+
+// IAM Bounded Context Injection Configuration
+builder.Services.Configure<TokenSettings>(builder.Configuration.GetSection("TokenSettings"));
+
+builder.Services.AddScoped<IUserRepository, UserRespository>();
+builder.Services.AddScoped<IUserCommandService, UserCommandService>();
+builder.Services.AddScoped<IUserQueryService, UserQueryService>();
+builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<IHashingService, HashingService>();
+builder.Services.AddScoped<IIamContextFacade, IamContextFacade>();
+
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
@@ -90,6 +174,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseRequestAuthorization();
 
 app.UseHttpsRedirection();
 
