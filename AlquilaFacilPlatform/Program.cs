@@ -88,24 +88,6 @@ builder.Services.AddSwaggerGen(
                 }
             });
         c.EnableAnnotations();
-    });
-
-builder.Services.AddRouting(options => options.LowercaseUrls = true);
-
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-
-builder.Services.AddScoped<ISubscriptionRepository, SubscriptionRepository>();
-builder.Services.AddScoped<ISubscriptionCommandService, SubscriptionCommandService>();
-builder.Services.AddScoped<ISubscriptionQueryServices, SubscriptionQueryService>();
-
-builder.Services.AddScoped<IPlanRepository, PlanRepository>();
-builder.Services.AddScoped<IPlanCommandService, PlanCommandService>();
-builder.Services.AddScoped<IPlanQueryService, PlanQueryService>();
-
-builder.Services.AddScoped<IInvoiceQueryService, InvoiceQueryService>();
-builder.Services.AddScoped<IInvoiceRepository, InvoiceRepository>();
-builder.Services.AddScoped<IInvoiceCommandService, InvoiceCommandService>();
-
         c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
         {
             In = ParameterLocation.Header,
@@ -130,6 +112,24 @@ builder.Services.AddScoped<IInvoiceCommandService, InvoiceCommandService>();
             }
         });
     });
+
+builder.Services.AddRouting(options => options.LowercaseUrls = true);
+
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+builder.Services.AddScoped<ISubscriptionRepository, SubscriptionRepository>();
+builder.Services.AddScoped<ISubscriptionCommandService, SubscriptionCommandService>();
+builder.Services.AddScoped<ISubscriptionQueryServices, SubscriptionQueryService>();
+
+builder.Services.AddScoped<IPlanRepository, PlanRepository>();
+builder.Services.AddScoped<IPlanCommandService, PlanCommandService>();
+builder.Services.AddScoped<IPlanQueryService, PlanQueryService>();
+
+builder.Services.AddScoped<IInvoiceQueryService, InvoiceQueryService>();
+builder.Services.AddScoped<IInvoiceRepository, InvoiceRepository>();
+builder.Services.AddScoped<IInvoiceCommandService, InvoiceCommandService>();
+
+        
 
 // Shared Bounded Context Injection Configuration
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
