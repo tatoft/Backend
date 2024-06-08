@@ -11,6 +11,15 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AlquilaFacilPlatform.IAM.Interfaces.REST;
 
+/**
+ * <summary>
+ *     The users controller
+ * </summary>
+ * <remarks>
+ *     This class is used to handle user requests
+ * </remarks>
+ */
+
 [Authorize]
 [ApiController]
 [Route("api/v1/[controller]")]
@@ -21,6 +30,14 @@ public class UsersController(
     ) : ControllerBase
 {
     
+    
+    /**
+     * <summary>
+     *     Get user by id endpoint. It allows to get a user by id
+     * </summary>
+     * <param name="id">The user id</param>
+     * <returns>The user resource</returns>
+     */
     [HttpGet("{userId:int}")]
     public async Task<IActionResult> GetUserById(int id)
     {
@@ -30,6 +47,13 @@ public class UsersController(
         return Ok(userResource);
     }
     
+    
+    /**
+     * <summary>
+     *     Get all users endpoint. It allows to get all users
+     * </summary>
+     * <returns>The user resources</returns>
+     */
     [HttpGet]
     public async Task<IActionResult> GetAllUsers()
     {

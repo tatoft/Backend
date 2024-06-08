@@ -14,6 +14,13 @@ namespace AlquilaFacilPlatform.IAM.Interfaces.REST;
 public class AuthenticationController(IUserCommandService userCommandService) : ControllerBase
 {
 
+    /**
+     * <summary>
+     *     Sign in endpoint. It allows to authenticate a user
+     * </summary>
+     * <param name="signInResource">The sign in resource containing username and password.</param>
+     * <returns>The authenticated user resource, including a JWT token</returns>
+     */
     [HttpPost("sign-in")]
     [AllowAnonymous]
     public async Task<IActionResult> SignIn([FromBody] SignInResource signInResource)
@@ -26,6 +33,13 @@ public class AuthenticationController(IUserCommandService userCommandService) : 
         return Ok(resource);
     }
 
+    /**
+     * <summary>
+     *     Sign up endpoint. It allows to create a new user
+     * </summary>
+     * <param name="signUpResource">The sign up resource containing username and password.</param>
+     * <returns>A confirmation message on successful creation.</returns>
+     */
     [HttpPost("sign-up")]
     [AllowAnonymous]
     public async Task<IActionResult> SignUp([FromBody] SignUpResource signUpResource)
