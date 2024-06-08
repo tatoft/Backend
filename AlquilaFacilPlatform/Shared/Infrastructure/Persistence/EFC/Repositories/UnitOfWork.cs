@@ -3,7 +3,10 @@ using AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Configuration;
 
 namespace AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Repositories;
 
-public class UnitOfWork(AppDbContext context) : IUnitOfWork
+public class UnitOfWork : IUnitOfWork
 {
-    public async Task CompleteAsync() => await context.SaveChangesAsync();
+    private readonly AppDbContext _context;
+
+    public UnitOfWork(AppDbContext context) => _context = context;
+    public async Task CompleteAsync() => await _context.SaveChangesAsync();
 }

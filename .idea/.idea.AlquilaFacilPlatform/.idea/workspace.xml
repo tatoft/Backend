@@ -10,42 +10,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50558054-e316-41d5-87fd-0550638efd03" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/AlquilaFacilPlatform.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/AlquilaFacilPlatform.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Controllers/WeatherForecastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Controllers/WeatherForecastController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Domain/Repositories/IBaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Domain/Repositories/IBaseRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Domain/Repositories/IUnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Domain/Repositories/IUnitOfWork.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Interfaces/ASP/Configuration/Extensions/ModelStateExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Interfaces/ASP/Configuration/Extensions/ModelStateExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Interfaces/ASP/Configuration/Extensions/StringExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Interfaces/ASP/Configuration/Extensions/StringExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Interfaces/ASP/Configuration/KebabCaseRouteNamingConvention.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Interfaces/ASP/Configuration/KebabCaseRouteNamingConvention.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Application/Internal/CommandServices/UserCommandService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Application/Internal/CommandServices/UserCommandService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Application/Internal/QueryServices/UserQueryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Application/Internal/QueryServices/UserQueryService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Domain/Model/Aggregates/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Domain/Model/Aggregates/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Domain/Services/IUserCommandService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Domain/Services/IUserCommandService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Interfaces/REST/Transform/UserResourceFromEntityAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Interfaces/REST/Transform/UserResourceFromEntityAssembler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Interfaces/REST/UsersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Interfaces/REST/UsersController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Application/Internal/CommandServices/ProfileCommandService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Application/Internal/CommandServices/ProfileCommandService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Domain/Model/Aggregates/Profile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Domain/Model/Aggregates/Profile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Domain/Model/Commands/CreateProfileCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Domain/Model/Commands/CreateProfileCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Domain/Model/Queries/GetAllProfilesQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Domain/Model/Queries/GetAllProfilesQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Infrastructure/Persistence/EFC/Repositories/ProfileRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Infrastructure/Persistence/EFC/Repositories/ProfileRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/ACL/IProfilesContextFacade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/ACL/IProfilesContextFacade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/ACL/Services/ProfilesContextFacade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/ACL/Services/ProfilesContextFacade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/ProfilesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/ProfilesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Resources/CreateProfileResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Resources/CreateProfileResource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Resources/ProfileResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Resources/ProfileResource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Transform/CreateProfileCommandFromResourceAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Transform/CreateProfileCommandFromResourceAssembler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Transform/ProfileResourceFromEntityAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Transform/ProfileResourceFromEntityAssembler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/Extensions/ModelBuilderExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/Extensions/ModelBuilderExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/Extensions/StringExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/Extensions/StringExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Repositories/BaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Repositories/BaseRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Repositories/UnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Repositories/UnitOfWork.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/WeatherForecast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/WeatherForecast.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="autoShow" value="false" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/subscription" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/tatoft/Backend.git",
-    "accountId": "a0e09f17-ff5f-47cb-a5ee-d326679de74a"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/tatoft/Backend.git&quot;,
+    &quot;accountId&quot;: &quot;a0e09f17-ff5f-47cb-a5ee-d326679de74a&quot;
   }
-}]]></component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/c9e3996173cec136bc2e9f3b4ec45f2a323b1d63/src/Mvc/Mvc.Core/src/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AlquilaFacilPlatform/Locals/Domain/Repositories/ILocalRepository.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2h83fmZ5SVllMXwsCb2C2HQw8yu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -56,11 +75,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Launch Settings Profile.AlquilaFacilPlatform: IIS Express.executor": "Run",
+    ".NET Launch Settings Profile.AlquilaFacilPlatform: http.executor": "Run",
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "feature/profiles",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -69,10 +90,14 @@
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver.localdb",
+      "mysql"
+    ],
     "rider.external.source.directories": [
-      "C:\\Users\\USUARIO\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\USUARIO\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\USUARIO\\AppData\\Local\\Symbols\\src"
+      "C:\\Users\\Augusto\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Augusto\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\Augusto\\AppData\\Local\\Symbols\\src"
     ]
   }
 }]]></component>
@@ -132,12 +157,18 @@
       <option name="presentableId" value="Default" />
       <updated>1716961983682</updated>
       <workItem from="1716961985524" duration="719000" />
+      <workItem from="1716963217142" duration="698000" />
+      <workItem from="1717019326214" duration="15582000" />
+      <workItem from="1717208602407" duration="910000" />
+      <workItem from="1717553018992" duration="1474000" />
+      <workItem from="1717554595200" duration="12751000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
