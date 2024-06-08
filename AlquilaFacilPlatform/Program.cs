@@ -28,6 +28,11 @@ using AlquilaFacilPlatform.Shared.Domain.Repositories;
 using AlquilaFacilPlatform.Shared.Infrastructure.Interfaces.ASP.Configuration;
 using AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Configuration;
 using AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Repositories;
+using AlquilaFacilPlatform.Subscriptions.Application.Internal.CommandServices;
+using AlquilaFacilPlatform.Subscriptions.Application.Internal.QueryServices;
+using AlquilaFacilPlatform.Subscriptions.Domain.Repositories;
+using AlquilaFacilPlatform.Subscriptions.Domain.Services;
+using AlquilaFacilPlatform.Subscriptions.Infrastructure.Persistence.EFC.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
@@ -56,10 +61,8 @@ builder.Services.AddDbContext<AppDbContext>(
                     .LogTo(Console.WriteLine, LogLevel.Error)
                     .EnableDetailedErrors();    
     });
-
 // Configure Lowercase URLs
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
-
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -85,6 +88,24 @@ builder.Services.AddSwaggerGen(
                 }
             });
         c.EnableAnnotations();
+    });
+
+builder.Services.AddRouting(options => options.LowercaseUrls = true);
+
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+builder.Services.AddScoped<ISubscriptionRepository, SubscriptionRepository>();
+builder.Services.AddScoped<ISubscriptionCommandService, SubscriptionCommandService>();
+builder.Services.AddScoped<ISubscriptionQueryServices, SubscriptionQueryService>();
+
+builder.Services.AddScoped<IPlanRepository, PlanRepository>();
+builder.Services.AddScoped<IPlanCommandService, PlanCommandService>();
+builder.Services.AddScoped<IPlanQueryService, PlanQueryService>();
+
+builder.Services.AddScoped<IInvoiceQueryService, InvoiceQueryService>();
+builder.Services.AddScoped<IInvoiceRepository, InvoiceRepository>();
+builder.Services.AddScoped<IInvoiceCommandService, InvoiceCommandService>();
+
         c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
         {
             In = ParameterLocation.Header,

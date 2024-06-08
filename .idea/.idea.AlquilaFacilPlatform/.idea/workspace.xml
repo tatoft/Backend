@@ -11,6 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="50558054-e316-41d5-87fd-0550638efd03" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/SubscriptionResourceFromEntityAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Subscriptions/Interfaces/REST/Transform/SubscriptionResourceFromEntityAssembler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Application/Internal/CommandServices/UserCommandService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Application/Internal/CommandServices/UserCommandService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Application/Internal/QueryServices/UserQueryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Application/Internal/QueryServices/UserQueryService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Domain/Model/Aggregates/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Domain/Model/Aggregates/User.cs" afterDir="false" />
@@ -42,7 +45,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/subscription" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,7 +64,8 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
-  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
+
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -87,6 +91,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -163,6 +168,7 @@
       <workItem from="1717553018992" duration="1474000" />
       <workItem from="1717554595200" duration="12751000" />
     </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,5 +179,31 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="feat(Invoice): Added Repository Implementation" />
+    <MESSAGE value="feat(invoice): add IInvoiceRepository interface" />
+    <MESSAGE value="feat(invoice): add IInvoiceCommandService interface" />
+    <MESSAGE value="feat(invoice): add IInvoiceQueryService interface" />
+    <MESSAGE value="feat(invoice): add InvoiceResource record" />
+    <MESSAGE value="feat(transform): add InvoiceResourceFromEntityAssembler class" />
+    <MESSAGE value="feat: added ISubscriptionPaymentCommandService interface" />
+    <MESSAGE value="feat: added ISubscriptionPaymentQueryService interface" />
+    <MESSAGE value="feat: added ISubscriptionPaymentRepository interface" />
+    <MESSAGE value="feat: added GetAllInvoicesQuery class" />
+    <MESSAGE value="feat: added GetAllSubscriptionPayments class" />
+    <MESSAGE value="feat: added SubscriptionPayment entity class" />
+    <MESSAGE value="feat: added SubscriptionPaymentRepository class" />
+    <MESSAGE value="feat: added GetSubscriptionPaymentByIdQuery record" />
+    <MESSAGE value="feat: added GetInvoiceByIdQuery record" />
+    <MESSAGE value="feat: added ESubscriptionStatus enum" />
+    <MESSAGE value="feat: added CreateSubscriptionPaymentCommand record" />
+    <MESSAGE value="feat: added CreateInvoiceResource record" />
+    <MESSAGE value="feat: added CreateInvoiceCommandFromResourceAssembler class" />
+    <MESSAGE value="feat(invoice): added CreateInvoiceCommand record" />
+    <MESSAGE value="feat(invoice): added InvoiceController class" />
+    <MESSAGE value="chore: updated AppDbContext configuration with entity mappings" />
+    <MESSAGE value="feat: added subscription status to Subscription aggregate" />
+    <MESSAGE value="feat: added assignment of plan to subscription in SubscriptionCommandService" />
+    <MESSAGE value="feat: added Status field to SubscriptionResource" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added Status field to SubscriptionResource" />
   </component>
 </project>
