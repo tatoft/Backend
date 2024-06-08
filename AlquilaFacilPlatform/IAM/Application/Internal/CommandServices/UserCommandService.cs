@@ -27,7 +27,7 @@ public class UserCommandService (
         return (user, token);
     }
 
-    public async Task Handle(SignUpCommand command)
+    public async Task<User?> Handle(SignUpCommand command)
     {
         if (userRepository.ExistsByUsername(command.Username))
             throw new Exception($"Username {command.Username} is already taken");
@@ -38,6 +38,7 @@ public class UserCommandService (
         {
             await userRepository.AddAsync(user);
             await unitOfWork.CompleteAsync();
+            return user;
         }
         catch (Exception e)
         {

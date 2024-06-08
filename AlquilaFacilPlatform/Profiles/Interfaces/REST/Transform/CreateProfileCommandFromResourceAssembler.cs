@@ -8,6 +8,6 @@ public static class CreateProfileCommandFromResourceAssembler
     public static CreateProfileCommand ToCommandFromResource(CreateProfileResource resource)
     {
         return new CreateProfileCommand(resource.Name, resource.FatherName, resource.MotherName, resource.DateOfBirth,
-            resource.DocumentNumber, resource.Phone);
+            resource.DocumentNumber, resource.Phone, resource.UserId);
     }
 }

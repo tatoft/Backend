@@ -44,14 +44,12 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
                 n.WithOwner().HasForeignKey("Id");
                 n.Property(p => p.PriceNight).HasColumnName("PriceNight");
             });
-
         builder.Entity<Local>().OwnsOne(p => p.LType,
             e =>
             {
                 e.WithOwner().HasForeignKey("Id");
                 e.Property(a => a.TypeLocal).HasColumnName("TypeLocal");
             });
-
         builder.Entity<Local>().OwnsOne(p => p.Address,
             a =>
             {
@@ -60,7 +58,6 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
                 a.Property(s => s.Province).HasColumnName("AddressProvince");
 
             });
-
         builder.Entity<Local>().OwnsOne(p => p.Photo,
             h =>
             {
@@ -100,14 +97,19 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
                 e.Property(a => a.BirthDate).HasColumnName("BirthDate");
             });
         
-        
         //IAM Context
         
         builder.Entity<User>().HasKey(u => u.Id);
         builder.Entity<User>().Property(u => u.Id).IsRequired().ValueGeneratedOnAdd();
         builder.Entity<User>().Property(u => u.Username).IsRequired();
         builder.Entity<User>().Property(u => u.PasswordHash).IsRequired();
-        
+            
+        builder.Entity<User>()
+            .HasMany(c => c.Profiles)
+            .WithOne(t => t.User)
+            .HasForeignKey(t => t.UserId)
+            .HasPrincipalKey(t => t.Id);
+            
         
         // Apply SnakeCase Naming Convention
         builder.UseSnakeCaseWithPluralizedTableNamingConvention();

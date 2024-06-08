@@ -10,17 +10,19 @@ namespace AlquilaFacilPlatform.Profiles.Interfaces.REST;
 [ApiController]
 [Route("api/v1/[controller]")]
 [Produces(MediaTypeNames.Application.Json)]
-public class ProfilesController(IProfileCommandService profileCommandService, IProfileQueryService profileQueryService)
-: ControllerBase
+public class ProfilesController(
+    IProfileCommandService profileCommandService, 
+    IProfileQueryService profileQueryService)
+    : ControllerBase
 {
     [HttpPost]
-    public async Task<IActionResult> CreateProfile(CreateProfileResource resource)
+    public async Task<IActionResult> CreateProfile([FromBody] CreateProfileResource createProfileResource)
     {
-        var createProfileCommand = CreateProfileCommandFromResourceAssembler.ToCommandFromResource(resource);
+        var createProfileCommand = CreateProfileCommandFromResourceAssembler.ToCommandFromResource(createProfileResource);
         var profile = await profileCommandService.Handle(createProfileCommand);
         if (profile is null) return BadRequest();
-        var profileResource = ProfileResourceFromEntityAssembler.ToResourceFromEntity(profile);
-        return CreatedAtAction(nameof(GetProfileById), new {profileId = profileResource.Id}, profileResource);
+        var resource = ProfileResourceFromEntityAssembler.ToResourceFromEntity(profile);
+        return CreatedAtAction(nameof(GetProfileById), new {profileId = resource.Id}, resource);
     }
     
     [HttpGet]
@@ -28,15 +30,14 @@ public class ProfilesController(IProfileCommandService profileCommandService, IP
     {
         var getAllProfilesQuery = new GetAllProfilesQuery();
         var profiles = await profileQueryService.Handle(getAllProfilesQuery);
-        var profileResources = profiles.Select(ProfileResourceFromEntityAssembler.ToResourceFromEntity);
-        return Ok(profileResources);
+        var resources = profiles.Select(ProfileResourceFromEntityAssembler.ToResourceFromEntity);
+        return Ok(resources);
     }
     
-    [HttpGet("{profileId:int}")]
-    public async Task<IActionResult> GetProfileById(int profileId)
+    [HttpGet("{profileId}")]
+    public async Task<IActionResult> GetProfileById([FromRoute] int profileId)
     {
-        var getProfileByIdQuery = new GetProfileByIdQuery(profileId);
-        var profile = await profileQueryService.Handle(getProfileByIdQuery);
+        var profile = await profileQueryService.Handle(new GetProfileByIdQuery(profileId));
         if (profile == null) return NotFound();
         var profileResource = ProfileResourceFromEntityAssembler.ToResourceFromEntity(profile);
         return Ok(profileResource);

@@ -1,9 +1,10 @@
+using AlquilaFacilPlatform.IAM.Domain.Model.Aggregates;
 using AlquilaFacilPlatform.Profiles.Domain.Model.Commands;
 using AlquilaFacilPlatform.Profiles.Domain.Model.ValueObjects;
 
 namespace AlquilaFacilPlatform.Profiles.Domain.Model.Aggregates;
 
-public class Profile
+public partial class Profile
 {
     public Profile()
     {
@@ -14,12 +15,13 @@ public class Profile
     }
 
     public Profile(string name, string fatherName, string motherName, string dateOfBirth, string documentNumber,
-        string phone)
+        string phone, int userId) : this()
     {
         Name = new PersonName(name, fatherName, motherName);
         Birth = new DateOfBirth(dateOfBirth);
         PhoneN = new Phone(phone);
         DocumentN = new DocumentNumber(documentNumber);
+        UserId = userId;
     }
     
     public Profile(CreateProfileCommand command)
@@ -36,13 +38,12 @@ public class Profile
     public Phone PhoneN { get; private set; }
     public DocumentNumber DocumentN { get; private set; }
 
-    
+    public User User { get; internal set; }
+    public int UserId { get; internal set; }
+
     public string FullName => Name.FullName;
-    
     public string BirthDate => Birth.BirthDate;
-    
     public string PhoneNumber => PhoneN.PhoneNumber;
-    
     public string NumberDocument => DocumentN.NumberDocument;
 
 

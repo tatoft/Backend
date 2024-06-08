@@ -21,5 +21,4 @@ public class UserQueryService (IUserRepository userRepository) : IUserQueryServi
     {
         return await userRepository.FindByUsernameAsync(query.Username);
     }
-     
 }
