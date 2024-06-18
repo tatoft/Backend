@@ -27,4 +27,9 @@ public class User(string username, string passwordHash)
         PasswordHash = passwordHash;
         return this;
     }
+    
+    public static class GlobalVariables
+    {
+        public static int UserId { get; set; } 
+    }
 }

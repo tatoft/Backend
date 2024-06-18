@@ -22,6 +22,8 @@ public class UserCommandService (
         if (user == null || !hashingService.VerifyPassword(command.Password, user.PasswordHash))
             throw new Exception("Invalid username or password");
 
+        
+        User.GlobalVariables.UserId = user.Id;
         var token = tokenService.GenerateToken(user);
 
         return (user, token);

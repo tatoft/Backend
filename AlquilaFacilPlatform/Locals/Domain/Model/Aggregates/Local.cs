@@ -41,8 +41,10 @@ public partial class Local
 
     public LocalCategory? LocalCategory { get; internal set; }
     public int LocalCategoryId { get; private set; }
+    
+    public int UserId { get; set; }
 
-
+    
     public string StreetAddress => Address.FullAddress;
     public string LocalType => LType.TypeLocal;
     public int NightPrice => Price.PriceNight;
