@@ -23,6 +23,17 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Contact\Application\Internal\CommandServices\" />
+      <Folder Include="Contact\Application\Internal\QueryServices\" />
+      <Folder Include="Contact\Domain\Model\Aggregates\" />
+      <Folder Include="Contact\Domain\Model\Commands\" />
+      <Folder Include="Contact\Domain\Model\Entities\" />
+      <Folder Include="Contact\Domain\Model\Queries\" />
+      <Folder Include="Contact\Domain\Model\ValueObjects\" />
+      <Folder Include="Contact\Domain\Repositories\" />
+      <Folder Include="Contact\Domain\Services\" />
+      <Folder Include="Contact\Infraestructure\" />
+      <Folder Include="Contact\Interfaces\" />
       <Folder Include="IAM\Infrastructure\Pipeline\" />
     </ItemGroup>
 
