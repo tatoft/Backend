@@ -32,8 +32,10 @@
       <Folder Include="Contact\Domain\Model\ValueObjects\" />
       <Folder Include="Contact\Domain\Repositories\" />
       <Folder Include="Contact\Domain\Services\" />
-      <Folder Include="Contact\Infraestructure\" />
-      <Folder Include="Contact\Interfaces\" />
+      <Folder Include="Contact\Infraestructure\Persistence\EFC\Repositories\" />
+      <Folder Include="Contact\Interfaces\ACL\Services\" />
+      <Folder Include="Contact\Interfaces\REST\Resources\" />
+      <Folder Include="Contact\Interfaces\REST\Transform\" />
       <Folder Include="IAM\Infrastructure\Pipeline\" />
     </ItemGroup>
 
