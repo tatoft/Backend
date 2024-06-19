@@ -7,10 +7,12 @@ namespace AlquilaFacilPlatform.Locals.Interfaces.ACL.Services;
 
 public class LocalsContextFacade(ILocalCommandService localCommandService) : ILocalsContextFacade
 {
-    public async Task<int> CreateLocal(string district, string province, string localType, int price, string photoUrl, int localCategoryId)
+    public async Task<int> CreateLocal(string district, string street, string localType, string country, string city, 
+                int price, string photoUrl, int localCategoryId)
     {
-        var createLocalCommand = new CreateLocalCommand(district, province, localType, price, photoUrl, localCategoryId);
+        var createLocalCommand = new CreateLocalCommand(district, street, localType, country, city, price, photoUrl, localCategoryId);
         var local = await localCommandService.Handle(createLocalCommand);
         return local?.Id ?? 0;
     }
+
 }

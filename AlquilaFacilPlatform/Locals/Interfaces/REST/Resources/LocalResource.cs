@@ -1,4 +1,4 @@
 namespace AlquilaFacilPlatform.Locals.Interfaces.REST.Resources;
 
-public record LocalResource(int Id, string StreetAddress, string LocalType, int NightPrice, string PhotoUrl
+public record LocalResource(int Id, string StreetAddress, string LocalType, string CityPlace, int NightPrice, string PhotoUrl
 , LocalCategoryResource LocalCategory);

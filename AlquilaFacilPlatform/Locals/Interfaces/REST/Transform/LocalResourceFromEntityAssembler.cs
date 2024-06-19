@@ -10,7 +10,8 @@ public static class LocalResourceFromEntityAssembler
         return new LocalResource(
             local.Id, 
             local.StreetAddress, 
-            local.LocalType, 
+            local.LocalType,
+            local.CityPlace,
             local.NightPrice, 
             local.PhotoUrl,
             LocalCategoryResourceFromEntityAssembler.ToResourceFromEntity(local.LocalCategory));

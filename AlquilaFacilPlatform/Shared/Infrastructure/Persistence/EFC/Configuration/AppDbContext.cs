@@ -86,8 +86,8 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
             a =>
             {
                 a.WithOwner().HasForeignKey("Id");
-                a.Property(s => s.District).HasColumnName("AddressDistrict");
-                a.Property(s => s.Province).HasColumnName("AddressProvince");
+                a.Property(s => s.District).HasColumnName("District");
+                a.Property(s => s.Street).HasColumnName("Street");
 
             });
         builder.Entity<Local>().OwnsOne(p => p.Photo,
@@ -95,6 +95,14 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
             {
                 h.WithOwner().HasForeignKey("Id");
                 h.Property(g => g.PhotoUrlLink).HasColumnName("PhotoUrlLink");
+
+            });
+        builder.Entity<Local>().OwnsOne(p => p.Place,
+            a =>
+            {
+                a.WithOwner().HasForeignKey("Id");
+                a.Property(s => s.Country).HasColumnName("Country");
+                a.Property(s => s.City).HasColumnName("City");
 
             });
             

@@ -1,6 +1,6 @@
 namespace AlquilaFacilPlatform.Locals.Domain.Model.ValueObjects;
 
-public record StreetAddress(string District, string Province)
+public record StreetAddress(string District, string Street)
 {
     public StreetAddress() : this(string.Empty, string.Empty)
     {
@@ -12,5 +12,5 @@ public record StreetAddress(string District, string Province)
         
     }
 
-    public string FullAddress => $"{District}, {Province}";
+    public string FullAddress => $"{District}, {Street}";
 }
