@@ -25,7 +25,6 @@
     <ItemGroup>
       <Folder Include="Contact\Application\Internal\CommandServices\" />
       <Folder Include="Contact\Application\Internal\QueryServices\" />
-      <Folder Include="Contact\Domain\Model\Aggregates\" />
       <Folder Include="Contact\Domain\Model\Commands\" />
       <Folder Include="Contact\Domain\Model\Entities\" />
       <Folder Include="Contact\Domain\Model\Queries\" />

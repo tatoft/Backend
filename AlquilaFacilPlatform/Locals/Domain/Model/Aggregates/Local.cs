@@ -41,11 +41,8 @@ public partial class Local
     public PhotoUrl Photo { get; private set; }
     public StreetAddress Address { get; private set; }
     public CityPlace Place { get; private set; }
-
-
     public LocalCategory? LocalCategory { get; internal set; }
     public int LocalCategoryId { get; private set; }
-    
     public int UserId { get; set; }
 
     

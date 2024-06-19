@@ -9,7 +9,7 @@ public record StreetAddress(string District, string Street)
 
     public StreetAddress(string province) : this(province, string.Empty)
     {
-        
+           
     }
 
     public string FullAddress => $"{District}, {Street}";
