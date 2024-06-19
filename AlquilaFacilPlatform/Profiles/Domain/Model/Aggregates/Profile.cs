@@ -31,6 +31,14 @@ public partial class Profile
         PhoneN = new Phone(command.Phone);
         DocumentN = new DocumentNumber(command.DocumentNumber);
     }
+    
+    public void Update(UpdateProfileCommand command)
+    {
+        Name = new PersonName(command.Name, command.FatherName, command.MotherName);
+        Birth = new DateOfBirth(command.DateOfBirth);
+        PhoneN = new Phone(command.Phone);
+        DocumentN = new DocumentNumber(command.DocumentNumber);
+    }
 
     public int Id { get; }
     public PersonName Name { get; private set; }

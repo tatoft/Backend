@@ -26,4 +26,17 @@ public class ProfileCommandService(IProfileRepository profileRepository, IUserRe
             return null;
         }
     }
+
+    public async Task<Profile> Handle(UpdateProfileCommand command)
+    {
+        var profile = await profileRepository.FindByIdAsync(command.UserId);
+        if (profile == null)
+        {
+            throw new Exception("Profile with ID does not exist");
+        }
+
+        profile.Update(command);
+        await unitOfWork.CompleteAsync();
+        return profile;
+    }
 }

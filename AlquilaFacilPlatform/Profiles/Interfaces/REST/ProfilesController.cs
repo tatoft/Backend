@@ -42,4 +42,12 @@ public class ProfilesController(
         var profileResource = ProfileResourceFromEntityAssembler.ToResourceFromEntity(profile);
         return Ok(profileResource);
     }
+
+    [HttpPut("{id}")]
+    public async Task<ActionResult> UpdateFarm([FromBody] UpdateProfileResource updateProfileResource)
+    {
+        var updateProfileCommand = UpdateProfileCommandFromResourceAssembler.ToCommandFromResource(updateProfileResource);
+        var result = await profileCommandService.Handle(updateProfileCommand);
+        return Ok(ProfileResourceFromEntityAssembler.ToResourceFromEntity(result));
+    }
 }

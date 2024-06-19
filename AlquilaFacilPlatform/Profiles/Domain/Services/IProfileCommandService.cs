@@ -6,4 +6,5 @@ namespace AlquilaFacilPlatform.Profiles.Domain.Services;
 public interface IProfileCommandService
 {
     public Task<Profile?> Handle(CreateProfileCommand command);
+    public Task<Profile> Handle(UpdateProfileCommand command);
 }
