@@ -1,3 +1,4 @@
+using AlquilaFacilPlatform.Contacts.Domain.Model.Aggregates;
 using AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
 using AlquilaFacilPlatform.Subscriptions.Domain.Model.Aggregates;
 using AlquilaFacilPlatform.Subscriptions.Domain.Model.Entities;
@@ -5,7 +6,6 @@ using AlquilaFacilPlatform.IAM.Domain.Model.Aggregates;
 using AlquilaFacilPlatform.Locals.Domain.Model.Aggregates;
 using AlquilaFacilPlatform.Locals.Domain.Model.Entities;
 using AlquilaFacilPlatform.Profiles.Domain.Model.Aggregates;
-using AlquilaFacilPlatform.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
 using EntityFrameworkCore.CreatedUpdatedDate.Extensions;
 using Microsoft.EntityFrameworkCore;
 
@@ -97,6 +97,13 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
                 h.Property(g => g.PhotoUrlLink).HasColumnName("PhotoUrlLink");
 
             });
+        builder.Entity<Local>().OwnsOne(p => p.Description,
+            h =>
+            {
+                h.WithOwner().HasForeignKey("Id");
+                h.Property(g => g.MessageDescription).HasColumnName("MessageDescription");
+
+            });
         builder.Entity<Local>().OwnsOne(p => p.Place,
             a =>
             {
@@ -136,6 +143,40 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
                 e.WithOwner().HasForeignKey("Id");
                 e.Property(a => a.BirthDate).HasColumnName("BirthDate");
             });
+        
+        
+        // Contact Context
+        
+        builder.Entity<Contact>().HasKey(p => p.Id);
+        builder.Entity<Contact>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
+        builder.Entity<Contact>().OwnsOne(c => c.EAdress,
+            n =>
+            {
+                n.WithOwner().HasForeignKey("Id");
+                n.Property(c => c.EmailAdress).HasColumnName("EmailAdress");
+            });
+        builder.Entity<Contact>().OwnsOne(p => p.CMessage,
+            e =>
+            {
+                e.WithOwner().HasForeignKey("Id");
+                e.Property(a => a.ContactMessage).HasColumnName("ContactMessage");
+            });
+        builder.Entity<Contact>().OwnsOne(p => p.FullName,
+            a =>
+            {
+                a.WithOwner().HasForeignKey("Id");
+                a.Property(s => s.Name).HasColumnName("Name");
+                a.Property(s => s.Lastname).HasColumnName("Lastname");
+
+            });
+        builder.Entity<Contact>().OwnsOne(p => p.NPhone,
+            h =>
+            {
+                h.WithOwner().HasForeignKey("Id");
+                h.Property(g => g.PhoneNumber).HasColumnName("PhoneNumber");
+
+            });
+        
         
         //IAM Context
         

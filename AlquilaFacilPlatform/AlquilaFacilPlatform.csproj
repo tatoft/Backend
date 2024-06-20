@@ -23,7 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Contacts\Interfaces\" />
+      <Folder Include="Contacts\Interfaces\ACL\" />
       <Folder Include="IAM\Infrastructure\Pipeline\" />
     </ItemGroup>
 

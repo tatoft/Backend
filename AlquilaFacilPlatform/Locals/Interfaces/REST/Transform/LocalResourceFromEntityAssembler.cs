@@ -14,6 +14,7 @@ public static class LocalResourceFromEntityAssembler
             local.CityPlace,
             local.NightPrice, 
             local.PhotoUrl,
+            local.DescriptionMessage,
             LocalCategoryResourceFromEntityAssembler.ToResourceFromEntity(local.LocalCategory));
     }
 }

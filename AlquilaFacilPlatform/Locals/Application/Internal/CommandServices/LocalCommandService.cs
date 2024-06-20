@@ -16,8 +16,8 @@ public class LocalCommandService (ILocalRepository localRepository, ILocalCatego
     public async Task<Local?> Handle(CreateLocalCommand command)
     {
         var userAuthenticated = User.GlobalVariables.UserId;
-        var local = new Local(command.District, command.Street, command.LocalType, command.Country, command.City, command.Price, command.PhotoUrl,
-            command.LocalCategoryId);
+        var local = new Local(command.District, command.Street, command.LocalType, command.Country, command.City, 
+            command.Price, command.PhotoUrl, command.DescriptionMessage, command.LocalCategoryId);
         local.UserId = userAuthenticated;
         await localRepository.AddAsync(local);
         await unitOfWork.CompleteAsync();

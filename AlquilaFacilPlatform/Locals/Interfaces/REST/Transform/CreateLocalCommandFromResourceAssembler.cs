@@ -8,6 +8,6 @@ public static class CreateLocalCommandFromResourceAssembler
     public static CreateLocalCommand ToCommandFromResources(CreateLocalResource resource)
     {
         return new CreateLocalCommand(resource.District, resource.Street, resource.LocalType, resource.Country, resource.City, resource.Price,
-            resource.PhotoUrl, resource.LocalCategoryId);
+            resource.PhotoUrl, resource.DescriptionMessage, resource.LocalCategoryId);
     }
 }
