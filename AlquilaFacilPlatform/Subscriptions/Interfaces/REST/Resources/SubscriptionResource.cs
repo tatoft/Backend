@@ -1,3 +1,3 @@
 namespace AlquilaFacilPlatform.Subscriptions.Interfaces.REST.Resources;
 
-public record SubscriptionResource(int Id, int UserId, PlanResource Plan, string Status);
+public record SubscriptionResource(int Id, PlanResource Plan, string Status);

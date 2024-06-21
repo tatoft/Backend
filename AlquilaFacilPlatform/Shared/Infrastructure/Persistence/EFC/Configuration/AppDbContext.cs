@@ -34,7 +34,6 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
         
         builder.Entity<Subscription>().HasKey(s => s.Id);
         builder.Entity<Subscription>().Property(s => s.Id).IsRequired().ValueGeneratedOnAdd();
-        builder.Entity<Subscription>().Property(s => s.UserId).IsRequired();
 
         builder.Entity<Invoice>().HasKey(i => i.Id);
         builder.Entity<Invoice>().Property(i => i.Id).IsRequired().ValueGeneratedOnAdd();
@@ -101,7 +100,7 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
             h =>
             {
                 h.WithOwner().HasForeignKey("Id");
-                h.Property(g => g.MessageDescription).HasColumnName("MessageDescription");
+                h.Property(g => g.MessageDescription).HasColumnName("Description");
 
             });
         builder.Entity<Local>().OwnsOne(p => p.Place,

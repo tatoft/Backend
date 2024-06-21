@@ -8,8 +8,7 @@ public static class SubscriptionResourceFromEntityAssembler
 {
     public static SubscriptionResource ToResourceFromEntity(Subscription entity)
     {
-        return new SubscriptionResource(entity.Id, 
-            entity.UserId, 
+        return new SubscriptionResource(entity.Id,
             PlanResourceFromEntityAssembler.ToResourceFromEntity(entity.Plan),
             entity.Status.GetDisplayName());
     }

@@ -36,8 +36,8 @@ public partial class Contact
     public Message CMessage { get; private set; }
     public NameSurname FullName { get; private set; }
     public Phone NPhone { get; private set; }
-
-
+    
+    public int UserId { get; set; }
     public string Email => EAdress.EmailAdress;
     public string Message => CMessage.ContactMessage;
     public string NameSurname => FullName.FullSurname;

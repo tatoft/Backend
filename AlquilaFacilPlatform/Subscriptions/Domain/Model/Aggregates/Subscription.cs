@@ -6,7 +6,8 @@ namespace AlquilaFacilPlatform.Subscriptions.Domain.Model.Aggregates;
 public partial class Subscription
 {
     public int Id { get; }
-    public int UserId { get; private set; }
+    
+    public int UserId { get; set; }
     
     public ESubscriptionStatus Status { get; protected set; }
     
@@ -15,9 +16,8 @@ public partial class Subscription
     public Plan Plan { get; internal set; }
     public int PlanId { get; private set; }
 
-    public Subscription(int userId, int planId)
+    public Subscription(int planId)
     {
-        UserId = userId;
         PlanId = planId;
         Status = ESubscriptionStatus.Pending;
     }

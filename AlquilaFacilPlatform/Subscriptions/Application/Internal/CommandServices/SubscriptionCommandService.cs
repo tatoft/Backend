@@ -1,3 +1,4 @@
+using AlquilaFacilPlatform.IAM.Domain.Model.Aggregates;
 using AlquilaFacilPlatform.Shared.Domain.Repositories;
 using AlquilaFacilPlatform.Subscriptions.Domain.Model.Aggregates;
 using AlquilaFacilPlatform.Subscriptions.Domain.Model.Commands;
@@ -13,7 +14,9 @@ public class SubscriptionCommandService(ISubscriptionRepository subscriptionRepo
 {
     public async Task<Subscription?> Handle(CreateSubscriptionCommand command)
     {
-        var subscription = new Subscription(command.UserId, command.PlanId);
+        var userAuthenticated = User.GlobalVariables.UserId;
+        var subscription = new Subscription(command.PlanId);
+        subscription.UserId = userAuthenticated;
         await subscriptionRepository.AddAsync(subscription);
         await unitOfWork.CompleteAsync();
         var plan = await planRepository.FindByIdAsync(command.PlanId);
