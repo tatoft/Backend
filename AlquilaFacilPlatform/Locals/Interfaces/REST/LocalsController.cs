@@ -1,4 +1,5 @@
 using System.Net.Mime;
+using AlquilaFacilPlatform.IAM.Infrastructure.Pipeline.Middleware.Attributes;
 using AlquilaFacilPlatform.Locals.Domain.Model.Queries;
 using AlquilaFacilPlatform.Locals.Domain.Services;
 using AlquilaFacilPlatform.Locals.Interfaces.REST.Resources;
@@ -24,6 +25,7 @@ public class LocalsController(ILocalCommandService localCommandService, ILocalQu
         return CreatedAtAction(nameof(GetLocalById), new { localId = localResource.Id }, localResource);
     }
 
+    [AllowAnonymous]
     [HttpGet]
     public async Task<IActionResult> GetAllLocals()
     {
