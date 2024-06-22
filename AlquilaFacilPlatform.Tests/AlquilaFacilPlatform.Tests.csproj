@@ -26,10 +26,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="IntegrationTests\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\AlquilaFacilPlatform\AlquilaFacilPlatform.csproj" />
     </ItemGroup>
 
