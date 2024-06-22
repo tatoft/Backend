@@ -13,10 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50558054-e316-41d5-87fd-0550638efd03" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform.Tests/IntegrationTests/ProfileControllerTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform.Tests/AlquilaFacilPlatform.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform.Tests/AlquilaFacilPlatform.Tests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform.sln.DotSettings.user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlquilaFacilPlatform.Tests/IntegrationTests/UserControllerTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
