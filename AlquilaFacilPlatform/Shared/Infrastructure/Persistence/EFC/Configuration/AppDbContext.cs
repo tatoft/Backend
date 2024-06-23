@@ -184,11 +184,11 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
         builder.Entity<User>().Property(u => u.Username).IsRequired();
         builder.Entity<User>().Property(u => u.PasswordHash).IsRequired();
             
-        builder.Entity<User>()
+        /*builder.Entity<User>()
             .HasMany(c => c.Profiles)
             .WithOne(t => t.User)
             .HasForeignKey(t => t.UserId)
-            .HasPrincipalKey(t => t.Id);
+            .HasPrincipalKey(t => t.Id);*/
             
         
         // Apply SnakeCase Naming Convention

@@ -13,7 +13,8 @@ public class ProfileSteps
      [Given(@"a profile with the following details:")]
      public void GivenAProfileWithTheFollowingDetails(Table table)
      {
-         var row = table.Rows[0]; 
+         var row = table.Rows[0];
+         int id = Convert.ToInt32(row["Id"]);
          string name = row["Name"];
          string fatherName = row["FatherName"];
          string motherName = row["MotherName"];
@@ -22,7 +23,7 @@ public class ProfileSteps
          string phone = row["Phone"];
          int userId = int.Parse(row["UserId"]);
 
-         profile = new Profile(name, fatherName, motherName, dateOfBirth, documentNumber, phone, userId);
+         profile = new Profile(name, fatherName, motherName, dateOfBirth, documentNumber, phone);
      }
 
      [When(@"the administrator creates the profile")]
@@ -41,14 +42,13 @@ public class ProfileSteps
      {
          var row = table.Rows[0];
          var updateCommand = new UpdateProfileCommand(
+             Convert.ToInt32(row["Id"]),
              row["Name"],
              row["FatherName"], 
              row["MotherName"], 
              row["DateOfBirth"],
              row["DocumentNumber"],
-             row["Phone"],
-             int.Parse(row["UserId"])
-             ); 
+             row["Phone"]); 
          try
          { 
              profile.Update(updateCommand);
@@ -76,13 +76,13 @@ public class ProfileSteps
      {
          var row = table.Rows[0];
          var updateCommand = new UpdateProfileCommand(
+             Convert.ToInt32(row["Id"]),
              row["Name"],
              row.ContainsKey("FatherName") ? row["FatherName"] : null,
              row.ContainsKey("MotherName") ? row["MotherName"] : null,
              row["DateOfBirth"],
              row.ContainsKey("DocumentNumber") ? row["DocumentNumber"] : null,
-             row.ContainsKey("Phone") ? row["Phone"] : null,
-             int.Parse(row["UserId"])
+             row.ContainsKey("Phone") ? row["Phone"] : null
              );
 
          try

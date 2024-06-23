@@ -14,9 +14,8 @@ public class ProfileTests
         string dateOfBirth = "1990-01-01";
         string documentNumber = "12345678";
         string phone = "123456789";
-        int userId = 1;
         
-        var profile = new Profile(name, fatherName, motherName, dateOfBirth, documentNumber, phone, userId);
+        var profile = new Profile(name, fatherName, motherName, dateOfBirth, documentNumber, phone);
         
         Assert.Equal(name, profile.Name.Name);
         Assert.Equal(fatherName, profile.Name.FatherName);
@@ -24,21 +23,20 @@ public class ProfileTests
         Assert.Equal(dateOfBirth, profile.Birth.BirthDate);
         Assert.Equal(documentNumber, profile.DocumentN.NumberDocument);
         Assert.Equal(phone, profile.PhoneN.PhoneNumber);
-        Assert.Equal(userId, profile.UserId);
     }
 
     [Fact]
     public void Profile_Update_ShouldUpdateProperties()
     {
-        var profile = new Profile("Jane", "Johnson", "Doe", "1995-02-15", "87654321", "987654321", 2);
+        var profile = new Profile("Jane", "Johnson", "Doe", "1995-02-15", "87654321", "987654321");
         var updateCommand = new UpdateProfileCommand(
+            99,
             "New Jane",
             "New Johnson",
             "New Doe",
             "2000-01-01",
             "12345678",
-            "999999999",
-            2
+            "999999999"
         );
         
         profile.Update(updateCommand);
@@ -49,7 +47,6 @@ public class ProfileTests
         Assert.Equal(updateCommand.DateOfBirth, profile.Birth.BirthDate);
         Assert.Equal(updateCommand.DocumentNumber, profile.DocumentN.NumberDocument);
         Assert.Equal(updateCommand.Phone, profile.PhoneN.PhoneNumber);
-        Assert.Equal(2, profile.UserId); // Verify UserId remains the same
     }
 
 }

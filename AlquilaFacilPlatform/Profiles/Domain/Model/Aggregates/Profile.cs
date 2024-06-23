@@ -15,13 +15,12 @@ public partial class Profile
     }
 
     public Profile(string name, string fatherName, string motherName, string dateOfBirth, string documentNumber,
-        string phone, int userId) : this()
+        string phone) : this()
     {
         Name = new PersonName(name, fatherName, motherName);
         Birth = new DateOfBirth(dateOfBirth);
         PhoneN = new Phone(phone);
         DocumentN = new DocumentNumber(documentNumber);
-        UserId = userId;
     }
     
     public Profile(CreateProfileCommand command)
@@ -46,8 +45,10 @@ public partial class Profile
     public Phone PhoneN { get; private set; }
     public DocumentNumber DocumentN { get; private set; }
 
-    public User User { get; internal set; }
-    public int UserId { get; internal set; }
+    //public User User { get; internal set; }
+    //public int UserId { get; internal set; }
+    
+    public int UserId { get; set; }
 
     public string FullName => Name.FullName;
     public string BirthDate => Birth.BirthDate;

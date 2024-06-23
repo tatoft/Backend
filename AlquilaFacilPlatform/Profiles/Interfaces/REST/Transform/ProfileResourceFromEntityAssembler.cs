@@ -13,7 +13,6 @@ public class ProfileResourceFromEntityAssembler
             entity.FullName, 
             entity.PhoneNumber, 
             entity.NumberDocument, 
-            entity.BirthDate,
-            UserResourceFromEntityAssembler.ToResourceFromEntity(entity.User));
+            entity.BirthDate);
     }
 }
