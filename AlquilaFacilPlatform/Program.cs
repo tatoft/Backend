@@ -120,6 +120,16 @@ builder.Services.AddSwaggerGen(
 
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
+// Add CORS Policy
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllPolicy",
+        policy => policy.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
+});
+
+
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 builder.Services.AddScoped<ISubscriptionRepository, SubscriptionRepository>();
@@ -185,6 +195,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("AllowAllPolicy");
+
 app.UseRequestAuthorization();
 
 app.UseHttpsRedirection();
