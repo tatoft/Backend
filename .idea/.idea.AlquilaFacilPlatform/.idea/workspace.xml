@@ -10,23 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50558054-e316-41d5-87fd-0550638efd03" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/dataSources/e2796e41-4adf-41a2-b6c4-0a94523f9196.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/dataSources/e2796e41-4adf-41a2-b6c4-0a94523f9196.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform.Tests/AcceptanceTests/Steps/ProfileSteps.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform.Tests/AcceptanceTests/Steps/ProfileSteps.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform.Tests/UnitTests/ProfileTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform.Tests/UnitTests/ProfileTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Application/Internal/CommandServices/ProfileCommandService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Application/Internal/CommandServices/ProfileCommandService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Domain/Model/Aggregates/Profile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Domain/Model/Aggregates/Profile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Domain/Model/Commands/CreateProfileCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Domain/Model/Commands/CreateProfileCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Domain/Model/Commands/UpdateProfileCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Domain/Model/Commands/UpdateProfileCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Infrastructure/Persistence/EFC/Repositories/ProfileRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Infrastructure/Persistence/EFC/Repositories/ProfileRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/ACL/IProfilesContextFacade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/ACL/IProfilesContextFacade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/ACL/Services/ProfilesContextFacade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/ACL/Services/ProfilesContextFacade.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Resources/CreateProfileResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Resources/CreateProfileResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Resources/ProfileResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Resources/ProfileResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Resources/UpdateProfileResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Resources/UpdateProfileResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Transform/CreateProfileCommandFromResourceAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Transform/CreateProfileCommandFromResourceAssembler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Transform/ProfileResourceFromEntityAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Transform/ProfileResourceFromEntityAssembler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Transform/UpdateProfileCommandFromResourceAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Profiles/Interfaces/REST/Transform/UpdateProfileCommandFromResourceAssembler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infrastructure/Pipeline/Middleware/Components/RequestAuthorizationMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infrastructure/Pipeline/Middleware/Components/RequestAuthorizationMiddleware.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +47,10 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/c9e3996173cec136bc2e9f3b4ec45f2a323b1d63/src/Mvc/Mvc.Core/src/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9b415e10f5ba4a949da6625f698e9c5d26a7c0/78/d50b039c/DatabaseFacade.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Augusto/RiderProjects/Backend-AlquilaFacil/AlquilaFacilPlatform/IAM/Infrastructure/Pipeline/Middleware/Components/RequestAuthorizationMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AlquilaFacilPlatform/Locals/Domain/Repositories/ILocalRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Augusto/RiderProjects/Backend-AlquilaFacil/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/AppDbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Augusto/RiderProjects/Backend-AlquilaFacil/AlquilaFacilPlatform/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -106,7 +97,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.AlquilaFacilPlatform: http">
+  <component name="RunManager" selected=".NET Launch Settings Profile.AlquilaFacilPlatform: IIS Express">
     <configuration name="AlquilaFacilPlatform: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/AlquilaFacilPlatform/AlquilaFacilPlatform.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -217,6 +208,7 @@
       <workItem from="1718862053037" duration="2538000" />
       <workItem from="1718943055054" duration="8265000" />
       <workItem from="1719006277137" duration="4936000" />
+      <workItem from="1719248656826" duration="6563000" />
     </task>
     <option name="localTasksCounter" value="30" />
     <servers />

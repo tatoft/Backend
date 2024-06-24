@@ -2,6 +2,8 @@ using AlquilaFacilPlatform.IAM.Application.Internal.OutboundServices;
 using AlquilaFacilPlatform.IAM.Domain.Model.Queries;
 using AlquilaFacilPlatform.IAM.Domain.Services;
 using AlquilaFacilPlatform.IAM.Infrastructure.Pipeline.Middleware.Attributes;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 
 namespace AlquilaFacilPlatform.IAM.Infrastructure.Pipeline.Middleware.Components;
 
