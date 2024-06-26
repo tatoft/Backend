@@ -56,4 +56,8 @@ public partial class Profile
     public string NumberDocument => DocumentN.NumberDocument;
 
 
+    public void setUserId(int userId)
+    {
+        UserId = userId;
+    }
 }

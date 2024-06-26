@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AlquilaFacilPlatform.Profiles.Infrastructure.Persistence.EFC.Repositories;
 
+
 public class ProfileRepository(AppDbContext context) : BaseRepository<Profile>(context), IProfileRepository
 {
     public new async Task<Profile?> FindByIdAsync(int id) =>
@@ -19,4 +20,13 @@ public class ProfileRepository(AppDbContext context) : BaseRepository<Profile>(c
             .Include(profile => profile.Id)
             .ToListAsync();
     }
+
+    public async Task<List<Profile>> GetProfilesByDocumentNumber(string commandDocumentNumber)
+    {
+        return await Context.Set<Profile>()
+            .Where(p => p.DocumentN.NumberDocument == commandDocumentNumber)
+            .ToListAsync();
+    }
+    
+    
 }
