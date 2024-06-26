@@ -22,7 +22,7 @@ public class ContactQueryService(IContactRepository contactRepository) : IContac
         return contactRepository.FindByIdAsync(query.Id);
     }
 
-    public async Task<IEnumerable<Contact>> FindBypropertysIdAsync(string queryPropertyId)
+    public async Task<IEnumerable<Contact>> FindBypropertysIdAsync(int queryPropertyId)
     {
         return await contactRepository.FindBypropertyIdAsync(queryPropertyId);
     }

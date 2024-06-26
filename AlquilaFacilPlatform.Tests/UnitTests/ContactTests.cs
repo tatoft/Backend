@@ -13,8 +13,9 @@ public class ContactTests
         string message = "Me gustaría alquilar esta casa";
         string email = "John_DOE@yahoo.com";
         string phone = "983320616";
+        int propertyId = 1;
 
-        var contact = new Contact(name, lastName, message, email, phone, propertyId: "");
+        var contact = new Contact(name, lastName, message, email, phone, propertyId);
         
         Assert.Equal(email, contact.EAdress.EmailAdress);
         Assert.Equal(message, contact.CMessage.ContactMessage);
@@ -31,7 +32,8 @@ public class ContactTests
             "Doe",
             "Me gustaría alquilar esta casa",
             "John_DOE@yahoo.com",
-            "983320616", "");
+            "983320616",
+            1);
         
         var contact = new Contact(createContact);
 

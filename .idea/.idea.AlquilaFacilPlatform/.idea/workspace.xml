@@ -11,11 +11,18 @@
   <component name="ChangeListManager">
     <list default="true" id="50558054-e316-41d5-87fd-0550638efd03" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/dataSources/e2796e41-4adf-41a2-b6c4-0a94523f9196.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/dataSources/e2796e41-4adf-41a2-b6c4-0a94523f9196.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_06_2024_20_42__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_06_2024_20_42__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infrastructure/Pipeline/Middleware/Components/RequestAuthorizationMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/IAM/Infrastructure/Pipeline/Middleware/Components/RequestAuthorizationMiddleware.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform.Tests/UnitTests/ContactTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform.Tests/UnitTests/ContactTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Application/Internal/QueryService/ContactQueryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Application/Internal/QueryService/ContactQueryService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Domain/Model/Aggregates/Contact.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Domain/Model/Aggregates/Contact.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Domain/Model/Commands/CreateContactCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Domain/Model/Commands/CreateContactCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Domain/Model/Queries/GetContactsBypropertyIdQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Domain/Model/Queries/GetContactsBypropertyIdQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Domain/Repositories/IContactRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Domain/Repositories/IContactRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Infrastructure/Persistence/EFC/Repositories/ContactRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Infrastructure/Persistence/EFC/Repositories/ContactRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Interfaces/REST/ContactController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Interfaces/REST/ContactController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Interfaces/REST/Resource/ContactResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Interfaces/REST/Resource/ContactResource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Interfaces/REST/Resource/CreateContactResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Interfaces/REST/Resource/CreateContactResource.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="feature/properties" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -82,7 +89,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;RiderIisExpressOptionsPageId&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -209,6 +216,8 @@
       <workItem from="1718943055054" duration="8265000" />
       <workItem from="1719006277137" duration="4936000" />
       <workItem from="1719248656826" duration="6563000" />
+      <workItem from="1719336991576" duration="11331000" />
+      <workItem from="1719424101017" duration="4889000" />
     </task>
     <option name="localTasksCounter" value="30" />
     <servers />

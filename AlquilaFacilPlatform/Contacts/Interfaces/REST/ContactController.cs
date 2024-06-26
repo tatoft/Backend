@@ -46,7 +46,7 @@ public class ContactController(IContactCommandService contactCommandService, ICo
     }
     
     [HttpGet("{propertyId}")]
-    public async Task<IActionResult> GetContactsByPropertyId(string propertyId)
+    public async Task<IActionResult> GetContactsByPropertyId(int propertyId)
     {
         var getContactsByPropertyIdQuery = new GetContactsBypropertyIdQuery(propertyId);
         var contacts = await contactQueryService.Handle(getContactsByPropertyIdQuery);

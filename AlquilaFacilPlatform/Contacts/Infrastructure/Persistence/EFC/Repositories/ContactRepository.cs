@@ -10,7 +10,7 @@ public class ContactRepository(AppDbContext context) : BaseRepository<Contact>(c
 {
     private IContactRepository _contactRepositoryImplementation;
 
-    public Task<Contact?> FindBypropertyIdAsync(string queryPropertyId)
+    public Task<Contact?> FindBypropertyIdAsync(int queryPropertyId)
     {
         return context.Set<Contact>().FirstOrDefaultAsync(c => c.propertyId == queryPropertyId);
     }

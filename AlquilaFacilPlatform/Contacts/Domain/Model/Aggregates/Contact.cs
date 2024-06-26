@@ -15,7 +15,7 @@ public partial class Contact : IEnumerable, IEnumerable<Contact>
         NPhone = new Phone();
     }
 
-    public Contact(string name, string lastname, string message, string email, string phone, string propertyId) : this()
+    public Contact(string name, string lastname, string message, string email, string phone, int propertyId) : this()
     {
         EAdress = new Email(email);
         CMessage = new Message(message);
@@ -40,7 +40,7 @@ public partial class Contact : IEnumerable, IEnumerable<Contact>
     public Phone NPhone { get; private set; }
     
     public int UserId { get; set; }
-    public string propertyId { get; set; }
+    public int propertyId { get; set; }
     public string Email => EAdress.EmailAdress;
     public string Message => CMessage.ContactMessage;
     public string NameSurname => FullName.FullSurname;
