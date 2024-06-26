@@ -13,6 +13,7 @@ public static class ContactResourceFromEntityAssembler
             contact.Message,
             contact.NameSurname,
             contact.Phone,
-            contact.propertyId);
+            contact.propertyId,
+            contact.UserId);
     }
 }
