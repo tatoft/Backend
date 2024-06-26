@@ -1,6 +1,0 @@
-﻿services:
-  alquilafacilplatform:
-    image: alquilafacilplatform
-    build:
-      context: .
-      dockerfile: AlquilaFacilPlatform/Dockerfile

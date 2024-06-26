@@ -10,19 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50558054-e316-41d5-87fd-0550638efd03" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/dataSources/e2796e41-4adf-41a2-b6c4-0a94523f9196.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/dataSources/e2796e41-4adf-41a2-b6c4-0a94523f9196.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_06_2024_20_42__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_06_2024_20_42__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform.Tests/UnitTests/ContactTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform.Tests/UnitTests/ContactTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Application/Internal/QueryService/ContactQueryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Application/Internal/QueryService/ContactQueryService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Domain/Model/Aggregates/Contact.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Domain/Model/Aggregates/Contact.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Domain/Model/Commands/CreateContactCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Domain/Model/Commands/CreateContactCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Domain/Model/Queries/GetContactsBypropertyIdQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Domain/Model/Queries/GetContactsBypropertyIdQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Domain/Repositories/IContactRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Domain/Repositories/IContactRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Infrastructure/Persistence/EFC/Repositories/ContactRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Infrastructure/Persistence/EFC/Repositories/ContactRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Interfaces/REST/ContactController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Interfaces/REST/ContactController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Interfaces/REST/Resource/ContactResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Interfaces/REST/Resource/ContactResource.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Interfaces/REST/Resource/CreateContactResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Interfaces/REST/Resource/CreateContactResource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Interfaces/REST/Transform/ContactResourceFromEntityAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Interfaces/REST/Transform/ContactResourceFromEntityAssembler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Locals/Interfaces/REST/Resources/LocalResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Locals/Interfaces/REST/Resources/LocalResource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Locals/Interfaces/REST/Transform/LocalResourceFromEntityAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Locals/Interfaces/REST/Transform/LocalResourceFromEntityAssembler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/appsettings.Production.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/appsettings.Production.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +212,7 @@
       <workItem from="1719006277137" duration="4936000" />
       <workItem from="1719248656826" duration="6563000" />
       <workItem from="1719336991576" duration="11331000" />
-      <workItem from="1719424101017" duration="4889000" />
+      <workItem from="1719424101017" duration="11907000" />
     </task>
     <option name="localTasksCounter" value="30" />
     <servers />
