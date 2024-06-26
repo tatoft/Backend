@@ -8,6 +8,6 @@ public static class CreateContactCommandFromResourceAssembler
     public static CreateContactCommand ToCommandFromResources(CreateContactResource resource)
     {
         return new CreateContactCommand(resource.Name, resource.Lastname, resource.Message, resource.Email,
-            resource.Phone);
+            resource.Phone, resource.propertyId);
     }
 }

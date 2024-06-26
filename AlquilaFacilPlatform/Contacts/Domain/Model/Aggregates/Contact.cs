@@ -1,10 +1,11 @@
+using System.Collections;
 using AlquilaFacilPlatform.Contacts.Domain.Model.Commands;
 using AlquilaFacilPlatform.Contacts.Domain.Model.ValueObjects;
 using Phone = AlquilaFacilPlatform.Profiles.Domain.Model.ValueObjects.Phone;
 
 namespace AlquilaFacilPlatform.Contacts.Domain.Model.Aggregates;
 
-public partial class Contact
+public partial class Contact : IEnumerable, IEnumerable<Contact>
 {
     public Contact()
     {
@@ -14,12 +15,13 @@ public partial class Contact
         NPhone = new Phone();
     }
 
-    public Contact(string name, string lastname, string message, string email, string phone) : this()
+    public Contact(string name, string lastname, string message, string email, string phone, string propertyId) : this()
     {
         EAdress = new Email(email);
         CMessage = new Message(message);
         FullName = new NameSurname(name, lastname);
         NPhone = new Phone(phone);
+        this.propertyId = propertyId;
     }
 
     public Contact(CreateContactCommand command)
@@ -38,9 +40,19 @@ public partial class Contact
     public Phone NPhone { get; private set; }
     
     public int UserId { get; set; }
+    public string propertyId { get; set; }
     public string Email => EAdress.EmailAdress;
     public string Message => CMessage.ContactMessage;
     public string NameSurname => FullName.FullSurname;
     public string Phone => NPhone.PhoneNumber;
 
+    IEnumerator<Contact> IEnumerable<Contact>.GetEnumerator()
+    {
+        throw new NotImplementedException();
+    }
+
+    public IEnumerator GetEnumerator()
+    {
+        throw new NotImplementedException();
+    }
 }

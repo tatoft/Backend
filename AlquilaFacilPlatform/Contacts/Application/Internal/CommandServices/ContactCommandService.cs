@@ -12,7 +12,7 @@ public class ContactCommandService (IContactRepository contactRepository, IUnitO
     public async Task<Contact?> Handle(CreateContactCommand command)
     {
         var userAuthenticated = User.GlobalVariables.UserId;
-        var contact = new Contact(command.Name, command.Lastname, command.Message, command.Email, command.Phone);
+        var contact = new Contact(command.Name, command.Lastname, command.Message, command.Email, command.Phone, command.propertyId);
         contact.UserId = userAuthenticated;
         await contactRepository.AddAsync(contact);
         await unitOfWork.CompleteAsync();

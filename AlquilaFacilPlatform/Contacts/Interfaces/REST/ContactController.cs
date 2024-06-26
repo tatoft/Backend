@@ -1,4 +1,5 @@
 using System.Net.Mime;
+using AlquilaFacilPlatform.Contacts.Domain.Model.Aggregates;
 using AlquilaFacilPlatform.Contacts.Domain.Model.Queries;
 using AlquilaFacilPlatform.Contacts.Domain.Repositories;
 using AlquilaFacilPlatform.Contacts.Domain.Services;
@@ -43,5 +44,21 @@ public class ContactController(IContactCommandService contactCommandService, ICo
         var contactResource = ContactResourceFromEntityAssembler.ToResourceFromEntity(contact);
         return Ok(contactResource);
     }
+    
+    [HttpGet("{propertyId}")]
+    public async Task<IActionResult> GetContactsByPropertyId(string propertyId)
+    {
+        var getContactsByPropertyIdQuery = new GetContactsBypropertyIdQuery(propertyId);
+        var contacts = await contactQueryService.Handle(getContactsByPropertyIdQuery);
+        
+        var contactResources = new List<ContactResource>();
+        foreach (Contact contact in contacts)
+        {
+            contactResources.Add(ContactResourceFromEntityAssembler.ToResourceFromEntity(contact));
+        }
+    
+        return Ok(contactResources);
+    }
+    
     
 }

@@ -1,3 +1,3 @@
 namespace AlquilaFacilPlatform.Contacts.Domain.Model.Queries;
 
-public record GetContactByIdQuery(int Id); 
+public record GetContactsBypropertyIdQuery(string propertyId);
