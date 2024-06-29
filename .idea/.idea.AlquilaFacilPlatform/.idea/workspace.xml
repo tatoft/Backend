@@ -10,42 +10,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50558054-e316-41d5-87fd-0550638efd03" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/AlquilaFacilPlatform.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/AlquilaFacilPlatform.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Controllers/WeatherForecastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Controllers/WeatherForecastController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Domain/Repositories/IBaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Domain/Repositories/IBaseRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Domain/Repositories/IUnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Domain/Repositories/IUnitOfWork.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Interfaces/ASP/Configuration/Extensions/ModelStateExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Interfaces/ASP/Configuration/Extensions/ModelStateExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Interfaces/ASP/Configuration/Extensions/StringExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Interfaces/ASP/Configuration/Extensions/StringExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Interfaces/ASP/Configuration/KebabCaseRouteNamingConvention.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Interfaces/ASP/Configuration/KebabCaseRouteNamingConvention.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/Extensions/ModelBuilderExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/Extensions/ModelBuilderExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/Extensions/StringExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Configuration/Extensions/StringExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Repositories/BaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Repositories/BaseRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Repositories/UnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Shared/Infrastructure/Persistence/EFC/Repositories/UnitOfWork.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/WeatherForecast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/WeatherForecast.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AlquilaFacilPlatform/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Interfaces/REST/Resource/ContactResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Interfaces/REST/Resource/ContactResource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Interfaces/REST/Transform/ContactResourceFromEntityAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Contacts/Interfaces/REST/Transform/ContactResourceFromEntityAssembler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Locals/Interfaces/REST/Resources/LocalResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Locals/Interfaces/REST/Resources/LocalResource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/Locals/Interfaces/REST/Transform/LocalResourceFromEntityAssembler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/Locals/Interfaces/REST/Transform/LocalResourceFromEntityAssembler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlquilaFacilPlatform/appsettings.Production.json" beforeDir="false" afterPath="$PROJECT_DIR$/AlquilaFacilPlatform/appsettings.Production.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="autoShow" value="false" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/properties" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/tatoft/Backend.git",
-    "accountId": "a0e09f17-ff5f-47cb-a5ee-d326679de74a"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;GutoPin&quot;
   }
-}]]></component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/tatoft/Backend.git&quot;,
+    &quot;accountId&quot;: &quot;a0e09f17-ff5f-47cb-a5ee-d326679de74a&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/c9e3996173cec136bc2e9f3b4ec45f2a323b1d63/src/Mvc/Mvc.Core/src/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9b415e10f5ba4a949da6625f698e9c5d26a7c0/78/d50b039c/DatabaseFacade.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Augusto/RiderProjects/Backend-AlquilaFacil/AlquilaFacilPlatform/IAM/Infrastructure/Pipeline/Middleware/Components/RequestAuthorizationMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AlquilaFacilPlatform/Locals/Domain/Repositories/ILocalRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Augusto/RiderProjects/Backend-AlquilaFacil/AlquilaFacilPlatform/Program.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2h83fmZ5SVllMXwsCb2C2HQw8yu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -54,29 +70,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.AlquilaFacilPlatform: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.AlquilaFacilPlatform: http.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;RiderIisExpressOptionsPageId&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\USUARIO\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\USUARIO\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\USUARIO\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver.localdb&quot;,
+      &quot;mysql&quot;
+    ],
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Augusto\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Augusto\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Augusto\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.AlquilaFacilPlatform: http">
+}</component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.AlquilaFacilPlatform: IIS Express">
     <configuration name="AlquilaFacilPlatform: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/AlquilaFacilPlatform/AlquilaFacilPlatform.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -122,6 +145,50 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="AlquilaFacilPlatform/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="alquilafacilplatform" />
+          <option name="containerName" value="alquilafacilplatform" />
+          <option name="contextFolderPath" value="C:\Users\Augusto\RiderProjects\Backend-AlquilaFacil" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="AlquilaFacilPlatform/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -132,15 +199,57 @@
       <option name="presentableId" value="Default" />
       <updated>1716961983682</updated>
       <workItem from="1716961985524" duration="719000" />
+      <workItem from="1716963217142" duration="698000" />
+      <workItem from="1717019326214" duration="15582000" />
+      <workItem from="1717208602407" duration="910000" />
+      <workItem from="1717553018992" duration="1474000" />
+      <workItem from="1717554595200" duration="12751000" />
+      <workItem from="1717822522921" duration="640000" />
+      <workItem from="1717880676340" duration="340000" />
+      <workItem from="1718773731791" duration="3369000" />
+      <workItem from="1718862053037" duration="2538000" />
+      <workItem from="1718943055054" duration="8265000" />
+      <workItem from="1719006277137" duration="4936000" />
+      <workItem from="1719248656826" duration="6563000" />
+      <workItem from="1719336991576" duration="11331000" />
+      <workItem from="1719424101017" duration="11907000" />
     </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="feat(Invoice): Added Repository Implementation" />
+    <MESSAGE value="feat(invoice): add IInvoiceRepository interface" />
+    <MESSAGE value="feat(invoice): add IInvoiceCommandService interface" />
+    <MESSAGE value="feat(invoice): add IInvoiceQueryService interface" />
+    <MESSAGE value="feat(invoice): add InvoiceResource record" />
+    <MESSAGE value="feat(transform): add InvoiceResourceFromEntityAssembler class" />
+    <MESSAGE value="feat: added ISubscriptionPaymentCommandService interface" />
+    <MESSAGE value="feat: added ISubscriptionPaymentQueryService interface" />
+    <MESSAGE value="feat: added ISubscriptionPaymentRepository interface" />
+    <MESSAGE value="feat: added GetAllInvoicesQuery class" />
+    <MESSAGE value="feat: added GetAllSubscriptionPayments class" />
+    <MESSAGE value="feat: added SubscriptionPayment entity class" />
+    <MESSAGE value="feat: added SubscriptionPaymentRepository class" />
+    <MESSAGE value="feat: added GetSubscriptionPaymentByIdQuery record" />
+    <MESSAGE value="feat: added GetInvoiceByIdQuery record" />
+    <MESSAGE value="feat: added ESubscriptionStatus enum" />
+    <MESSAGE value="feat: added CreateSubscriptionPaymentCommand record" />
+    <MESSAGE value="feat: added CreateInvoiceResource record" />
+    <MESSAGE value="feat: added CreateInvoiceCommandFromResourceAssembler class" />
+    <MESSAGE value="feat(invoice): added CreateInvoiceCommand record" />
+    <MESSAGE value="feat(invoice): added InvoiceController class" />
+    <MESSAGE value="chore: updated AppDbContext configuration with entity mappings" />
+    <MESSAGE value="feat: added subscription status to Subscription aggregate" />
+    <MESSAGE value="feat: added assignment of plan to subscription in SubscriptionCommandService" />
+    <MESSAGE value="feat: added Status field to SubscriptionResource" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added Status field to SubscriptionResource" />
   </component>
 </project>
